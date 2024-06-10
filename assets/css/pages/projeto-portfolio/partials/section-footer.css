@@ -1,0 +1,77 @@
+/*
+███████  ██████   ██████  ████████ ███████ ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+█████   ██    ██ ██    ██    ██    █████   ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+██       ██████   ██████     ██    ███████ ██   ██ 
+*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+#logo-footer {
+  margin-top: 0px;
+}
+.nav-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  outline: 2px solid var(--primary);
+  border-radius: 100px;
+  padding: 10px 0px;
+  margin: 40px 0px 0px 0px;
+}
+.nav-footer a {
+  color: var(--primary);
+  background-color: var(--bg);
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 21px;
+  transition: 200ms;
+}
+.nav-footer a:hover, nav .nav-footer a:focus {
+  color: var(--bg);
+  background-color: var(--primary);
+  font-weight: 600;
+}
+.creditos-footer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border-radius: 35px;
+  width: 100%;
+  padding: 15px 0px;
+  background-color: var(--tertiary);
+}
+.creditos-footer p {
+  color: var(--secundary);
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px 100px;
+}
+
+/*
+███    ███ ███████ ██████  ██  █████  
+████  ████ ██      ██   ██ ██ ██   ██ 
+██ ████ ██ █████   ██   ██ ██ ███████ 
+██  ██  ██ ██      ██   ██ ██ ██   ██ 
+██      ██ ███████ ██████  ██ ██   ██ 
+*/
+
+@media screen and (max-width: 733px) {
+  .nav-footer {
+    display: none;
+  }
+  #logo-footer {
+    margin-top: 0;
+  }
+  .creditos-footer {
+    height: 145px;
+  }
+}

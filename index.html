@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samy Silva de Sousa">
+    <meta name="description" content="Portfólio de Desenvolvedor Web - Samy Silva de Sousa">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Samy Silva, Samy Silva de Sousa, Portfolio, FrontEnd, BackEnd, Programador, Web, Dev">
+    <title>Samy Silva - Desenvolvedor Web</title>
+    <link rel="icon" href="./assets/files/svg/global/favicon-azul.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/css/pages/index/index.css"> <!--CSS-->
+    
+  </head>
+
+  <body id="body">
+
+    <div class="animacao-inicial"></div>
+    <div class="animacao-inicial2"></div>
+    <div class="animacao-inicial3"></div>
+
+    <div id="botao-direito">Feito por Samy Silva</div>
+
+
+    <!--
+    ██   ██ ███████  █████  ██████  ███████ ██████  
+    ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+    ███████ █████   ███████ ██   ██ █████   ██████  
+    ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+    ██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+    -->
+
+    <header id="header">
+      <a id="logo" href="index.html">Samy</a>
+
+      <nav class="menu">
+        <div class="nav-desktop">
+          <a id="nav-link-inicio" class="nav-link" href="#">Início</a>
+          <a id="nav-link-sobremim" class="nav-link" href="#sobre">Sobre Mim</a>
+          <a id="nav-link-tecno" class="nav-link" href="#tecnologias">Tecnologias</a>
+          <a id="nav-link-projetos" class="nav-link" href="#projetos">Projetos</a>
+          <a id="nav-link-contato" class="nav-link" href="#contato">Contato</a>
+        </div>
+        <div class="nav-mobile">
+          <a class="nav-link" href="#" title="Início"><span class="material-symbols-outlined inicio-icon">home</span></a>
+          <a class="nav-link" href="#sobre" title="Sobre Mim"><span class="material-symbols-outlined sobremim-icon">person</span></a>
+          <a class="nav-link" href="#tecnologias" title="Tecnologias"><span class="material-symbols-outlined tecnologias-icon">memory</span></a>
+          <a class="nav-link" href="#projetos" title="Projetos"><span class="material-symbols-outlined projetos-icon">lan</span></a>
+          <a class="nav-link" href="#contato" title="Contato"><span class="material-symbols-outlined contato-icon">alternate_email</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--
+      ██ ███    ██ ██  ██████ ██  ██████  
+      ██ ████   ██ ██ ██      ██ ██    ██ 
+      ██ ██ ██  ██ ██ ██      ██ ██    ██ 
+      ██ ██  ██ ██ ██ ██      ██ ██    ██ 
+      ██ ██   ████ ██  ██████ ██  ██████  
+      -->
+
+      <section id="inicio">
+        <div class="inicio-conteudo">
+          <p>Olá, Mundo! Me Chamo</p>
+          <h1 id="inicio-nome">Samy Silva</h1>
+          <p>Desenvolvedor Web</p>
+          <div class="inicio-botoes">
+            <a href="https://github.com/SamySilvaDeSousa" target="_blank" title="Meu GitHub"><ion-icon name="logo-github"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/samysilvadesousa/" target="_blank" title="Meu LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <button onclick="copiarEmail()" title="Meu Email"><span class="material-symbols-outlined">mail</span></button>
+          </div>
+          <a id="arrow" href="#sobre" title="Ver Mais"><span class="material-symbols-outlined">arrow_downward_alt</span></a>
+        </div>
+
+        <div class="toast">
+          <p>Email Copiado!</p>
+        </div>
+      </section>
+
+      <!--
+      ███████  ██████  ██████  ██████  ███████ 
+      ██      ██    ██ ██   ██ ██   ██ ██      
+      ███████ ██    ██ ██████  ██████  █████   
+           ██ ██    ██ ██   ██ ██   ██ ██      
+      ███████  ██████  ██████  ██   ██ ███████ 
+      -->
+
+      <section id="sobre">
+        <h2>Sobre Mim</h2>
+
+        <div class="sobremim-conteudo">
+          <div class="sobremim-container-1" data-aos="fade-right">
+            <div class="shape" data-aos="fade-right" data-aos-delay="1000"></div>
+            <div class="foto" data-aos="fade-right"></div>
+            <div class="sobremim-texto">
+              <h3>Perfil</h3>
+              <ul>
+                <li>Desenvolvendo Sites com Qualidade no Design e na Responsividade</li>
+                <li>Cursando Análise e Desenvolvimento de Sistemas</li>
+                <li>Interesse em Desenvolvimento Web</li>
+                <li>Buscando uma Oportunidade para atuar no Mercado de Trabalho</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="sobremim-container-2" data-aos="fade-down">
+            <h3>Formação</h3>
+            <div class="grade-sobremim">
+              <div class="card tecno">
+                <div class="glare"></div>
+                <h4>Graduação</h4>
+                <p><strong>Análise e Desenvolvimento de Sistemas</strong></p>
+                <p>Universidade Maurício de Nassau (UNINASSAU)</p>
+                <p class="tempo">2023 e 2024</p>
+              </div>
+              <div class="card" title="Ver Certificado">
+                <div class="glare"></div>
+                <h4>Curso</h4>
+                <p><strong>HTML5 e CSS3</strong></p>
+                <p>Curso Em Vídeo</p>
+                <p class="tempo">40h | 2024</p>
+              </div>
+              <div class="card">
+                <div class="glare"></div>
+                <h4>Curso</h4>
+                <p><strong>JavaScript</strong></p>
+                <p>Curso Em Vídeo</p>
+                <p class="tempo">40h | 2024</p>
+              </div>
+            </div>
+          </div>
+          <div class="sobremim-container-3" data-aos="fade-up">
+            <h3>Experiência</h3>
+            <div class="grade-sobremim">
+              <div class="card">
+                <div class="glare"></div>
+                <h4>Em Breve</h4>
+                <p>Buscando <br> Oportunidades</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--
+      ████████ ███████  ██████ ███    ██  ██████  
+         ██    ██      ██      ████   ██ ██    ██ 
+         ██    █████   ██      ██ ██  ██ ██    ██ 
+         ██    ██      ██      ██  ██ ██ ██    ██ 
+         ██    ███████  ██████ ██   ████  ██████  
+      -->
+
+      <section id="tecnologias">
+        <h2>Tecnologias</h2>
+
+        <div class="tecnologias-conteudo">
+
+          <div class="tecnologia-container" data-aos="fade-down">
+            <h3>Front-End</h3>
+
+            <div class="grade-tecnologias">
+              <div class="card">
+                <div class="glare"></div>
+                <ion-icon name="logo-html5" title="HTML5"></ion-icon>
+                <abbr title="Linguagem de Marcação de Hipertexto"><h4>HTML5</h4></abbr>
+              </div>
+              <div class="card">
+                <div class="glare"></div>
+                <ion-icon name="logo-css3" title="CSS3"></ion-icon>
+                <abbr title="Folhas de Estilo em Cascata"><h4>CSS3</h4></abbr>
+              </div>
+              <div class="card">
+                <div class="glare"></div>
+                <ion-icon name="logo-javascript" title="JavaScript"></ion-icon>
+                <h4 title="Linguagem de Programação">JavaScript</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="tecnologia-container" data-aos="fade-up">
+            <h3>Back-End</h3>
+
+            <div class="grade-tecnologias">
+              <div class="card">
+                <div class="glare"></div>
+                <span class="material-symbols-outlined icone-relogio">schedule</span>
+                <h4>Em Breve</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="tecnologia-container" data-aos="fade-up">
+            <h3>Banco de Dados</h3>
+
+            <div class="grade-tecnologias">
+              <div class="card">
+                <div class="glare"></div>
+                <i id="logo-sql" class="fa-solid fa-database" title="SQL"></i>
+                <abbr title="Linguagem de Consulta Estruturada"><h4>SQL</h4></abbr>
+              </div>
+              <div class="card">
+                <div class="glare"></div>
+                <img src="./assets/files/svg/pages/index/MySQL.svg" alt="MySQL" fill="var(--secundary)" title="MySQL">
+                <h4 title="">MySQL</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="tecnologia-container" data-aos="fade-up">
+            <h3>Controle de Versões</h3>
+
+            <div class="grade-tecnologias">
+              <div class="card">
+                <div class="glare"></div>
+                <i class="tecno-icon fa-brands fa-git-alt" title="Git"></i>
+                <h4>Git</h4>
+              </div>
+              <div class="card">
+                <div class="glare"></div>
+                <ion-icon name="logo-github" title="GitHub"></ion-icon>
+                <h4>GitHub</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="tecnologia-container" data-aos="fade-up">
+            <h3>Testes</h3>
+
+            <div class="grade-tecnologias">
+              <div class="card">
+                <div class="glare"></div>
+                <img src="./assets/files/svg/pages/index/Postman.svg" alt="Postman" title="Postman">
+                <h4>Postman</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--
+      ██████  ██████   ██████       ██ ███████ ████████  ██████  ███████ 
+      ██   ██ ██   ██ ██    ██      ██ ██         ██    ██    ██ ██      
+      ██████  ██████  ██    ██      ██ █████      ██    ██    ██ ███████ 
+      ██      ██   ██ ██    ██ ██   ██ ██         ██    ██    ██      ██ 
+      ██      ██   ██  ██████   █████  ███████    ██     ██████  ███████ 
+      -->
+
+      <section id="projetos">
+        <h2>Projetos</h2>
+
+        <div class="projetos-filtro" data-aos="fade-down">
+          <button id="filtrar-todos" class="botao-filtrar" onclick="filtrarProjeto('todos')">Todos</button>
+          <button id="filtrar-frontend" class="botao-filtrar" onclick="filtrarProjeto('frontend')">Front-End</button>
+          <button id="filtrar-backend" class="botao-filtrar" onclick="filtrarProjeto('backend')">Back-End</button>
+          <button id="filtrar-fullstack" class="botao-filtrar" onclick="filtrarProjeto('fullstack')">Full-Stack</button>
+        </div>
+
+        <div class="projetos-conteudo" id="projetos-conteudo">
+          <div class="projeto-container frontend" data-aos="fade-right">
+            <h4>Este Portfólio</h4>
+            <a href="./assets/files/images/pages/index/Portfolio.png" target="_blank" class="projeto-imagem" title="Ver Imagem do Projeto" style="background-image: url(./assets/files/images/pages/index/Portfolio.png); transition: 10s;"></a>
+            <div class="projeto-botoes">
+              <a href="https://samysilvadesousa.github.io/" target="_blank" title="Ver Projeto"><span class="material-symbols-outlined">visibility</span></a>
+              <a href="#projetos" title="Ver Código-fonte"><span class="material-symbols-outlined">code</span></a>
+              <button class="descricao-botao" title="Ver Descrição" onclick="abrirModal('descricao-overlay-1')"><span class="material-symbols-outlined">article</span></button>
+            </div>
+          </div>
+          <!--Modal do Projeto-->
+          <div id="descricao-overlay-1" class="overlay">
+            <div class="descricao">
+              <div class="descricao-top">
+                <h4>Este Portfólio</h4>
+                <button tabindex="0">
+                  <span  id="botao-fechar" class="material-symbols-outlined" onclick="fecharModal('descricao-overlay-1')" title="Fechar">close</span>
+                </button>
+              </div>
+              <div class="projeto-tecnologias">
+                <p class="projeto-tecnologia-icone">
+                  <ion-icon name="logo-html5" title="HTML5"></ion-icon>
+                  <span class="projeto-tecnologia-tooltip">HTML5</span>
+                </p>
+                <p class="projeto-tecnologia-icone">
+                  <ion-icon name="logo-css3" title="CSS3"></ion-icon>
+                  <span class="projeto-tecnologia-tooltip">CSS3</span>
+                </p>
+                <p class="projeto-tecnologia-icone">
+                  <ion-icon name="logo-javascript" title="JavaScript"></ion-icon>
+                  <span class="projeto-tecnologia-tooltip">JavaScript</span>
+                </p>
+              </div>
+              <div class="divisoria-descricao"></div>
+              <p>Esse projeto foi desenvolvido durante minha graduação<br>
+              usando HTML, CSS e JavaScript puros</p>
+              <div class="divisoria-descricao"></div>
+              <p><strong>Criado:</strong> 2023 - 2024</p>
+              <p><strong>Construção:</strong> Front-End</p>
+              <p><strong>Tecnologias Usadas:</strong> HTML, CSS e JavaScript</p>
+              <p><strong>Veja Online:</strong> <a href="https://samysilvadesousa.github.io/" target="_blank">Clique Aqui</a></p>
+              
+            </div>
+          </div>
+
+          <div class="projeto-container frontend" data-aos="fade-left">
+            <h4>ClinNassau</h4>
+            <a href="./assets/files/images/pages/index/ClinNassau.png" target="_blank" class="projeto-imagem" style="background-image: url(./assets/files/images/pages/index/ClinNassau.png); transition: 3s;"></a>
+            <div class="projeto-botoes">
+              <a href="#projetos" title="Ver Projeto"><span class="material-symbols-outlined">visibility</span></a>
+              <a href="#projetos" title="Ver Código-fonte"><span class="material-symbols-outlined">code</span></a>
+              <button class="descricao-botao" title="Ver Descrição" onclick="abrirModal('descricao-overlay-2')"><span class="material-symbols-outlined">article</span></button>
+            </div>
+          </div>
+          <!--Modal do Projeto-->
+          <div id="descricao-overlay-2" class="overlay">
+            <div class="descricao">
+              <div class="descricao-top">
+                <h4>ClinNassau</h4>
+                <button>
+                  <span id="botao-fechar" class="material-symbols-outlined" onclick="fecharModal('descricao-overlay-2')" title="Fechar">close</span>
+                </button>
+              </div>
+              <div class="projeto-tecnologias">
+                <p class="projeto-tecnologia-icone">
+                  <ion-icon name="logo-html5" title="HTML5"></ion-icon>
+                  <span class="projeto-tecnologia-tooltip">HTML5</span>
+                </p>
+                <p class="projeto-tecnologia-icone">
+                  <ion-icon name="logo-css3" title="CSS3"></ion-icon>
+                  <span class="projeto-tecnologia-tooltip">CSS3</span>
+                </p>
+                <p class="projeto-tecnologia-icone">
+                  <ion-icon name="logo-javascript" title="JavaScript"></ion-icon>
+                  <span class="projeto-tecnologia-tooltip">JavaScript</span>
+                </p>
+              </div>
+              <p>Descrição do Projeto.</p>
+              <p><strong>Descrição do Projeto</strong></p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!--
+       ██████  ██████  ███    ██ ████████  █████  ████████  ██████ 
+      ██      ██    ██ ████   ██    ██    ██   ██    ██    ██    ██
+      ██      ██    ██ ██ ██  ██    ██    ███████    ██    ██    ██
+      ██      ██    ██ ██  ██ ██    ██    ██   ██    ██    ██    ██
+       ██████  ██████  ██   ████    ██    ██   ██    ██     ██████ 
+      -->
+      
+      <section id="contato">
+        <h2>Contato</h2>
+
+        <div class="contato-conteudo">
+          <div class="contato-container" data-aos="fade-down">
+            <h3>Fale Comigo</h3>
+
+            <form class="contato-form">
+              <div class="input-item">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+              </div>
+              <div class="input-item">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="input-item">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+              </div>
+              <div class="input-item">
+                <label for="mensagem">Sua Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" class="form-input" rows="10" required></textarea>
+              </div>
+              <button id="botao-form" type="submit" title="Enviar Mensagem">
+                <span class="material-symbols-outlined" style=" transform: translateX(3px);">send</span>
+              </button>
+            </form>
+
+            <div class="contato-redes" data-aos="fade-up">
+              <div class="contato-redes-container">
+                <a href="https://github.com/SamySilvaDeSousa" target="_blank" title="Meu GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                <span>GitHub</span>
+              </div>
+              <div class="contato-redes-container">
+                <a href="https://www.linkedin.com/in/samysilvadesousa/" target="_blank" title="Meu LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+                <span>LinkedIn</span>
+              </div>
+              <div class="contato-redes-container">
+                <button onclick="copiarEmail()" title="Meu Email"><span class="material-symbols-outlined">mail</span></button>
+                <span>Email</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!--
+    ███████  ██████   ██████  ████████ ███████ ██████  
+    ██      ██    ██ ██    ██    ██    ██      ██   ██ 
+    █████   ██    ██ ██    ██    ██    █████   ██████  
+    ██      ██    ██ ██    ██    ██    ██      ██   ██ 
+    ██       ██████   ██████     ██    ███████ ██   ██ 
+    -->
+
+    <footer>
+      <nav class="menu-footer">
+        <div class="nav-footer">
+          <a id="nav-link-inicio-footer" class="nav-link" href="#">Início</a>
+          <a id="nav-link-sobremim-footer" class="nav-link" href="#sobre">Sobre Mim</a>
+          <a id="nav-link-tecno-footer" class="nav-link" href="#tecnologias">Tecnologias</a>
+          <a id="nav-link-projetos-footer" class="nav-link" href="#projetos">Projetos</a>
+          <a id="nav-link-contato-footer" class="nav-link" href="#contato">Contato</a>
+        </div>
+      </nav>
+      <a id="logo-footer" href="index.html">Samy</a>
+      <div class="creditos-footer">
+        <p>2024 &copy; Criado por Samy Silva de Sousa</p>
+      </div>
+    </footer>
+
+
+      <!--
+       ██████  ██    ██ ████████ ██████   ██████  ███████ 
+      ██    ██ ██    ██    ██    ██   ██ ██    ██ ██      
+      ██    ██ ██    ██    ██    ██████  ██    ██ ███████ 
+      ██    ██ ██    ██    ██    ██   ██ ██    ██      ██ 
+       ██████   ██████     ██    ██   ██  ██████  ███████ 
+      -->
+
+      <section class="trocar-cores">
+        <button id="config" title="Alterar Cor do Site"><span class="material-symbols-outlined">settings</span></button>
+        <div class="cores">
+          <button class="cor-azul" onclick="ativarCor('azul')" title="Tema Azul"></button>
+          <button class="cor-verde" onclick="ativarCor('verde')" title="Tema Verde"></button>
+
+          <div class="divisoria-config"></div>
+
+          <div class="cursor-highlight-container">
+            <button class="cursor-highlight" title="Ativar/Desativar Efeito do Cursor">
+              <span class="material-symbols-outlined">arrow_selector_tool</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <div class="sombra-cursor"></div>
+
+      <button href="#" id="subir" title="Voltar para o Topo">
+        <span class="material-symbols-outlined">arrow_upward_alt</span>
+      </button>
+
+      <audio loop id="musica">
+        <source src="./assets/files/music/global/musica.mp4" type="audio/mpeg">
+      </audio>
+      <button id="botao-musica" title="Ativar/Desativar Música">
+          <span class="material-symbols-outlined">no_sound</span>
+      </button>
+      <input type="range" id="controle-volume" min="0" max="1" step="0.01" value="1">
+    
+    <!--
+    ███████  ██████ ██████  ██ ██████  ████████ 
+    ██      ██      ██   ██ ██ ██   ██    ██    
+    ███████ ██      ██████  ██ ██████     ██    
+         ██ ██      ██   ██ ██ ██         ██    
+    ███████  ██████ ██   ██ ██ ██         ██   
+    -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--BIBLIOTECA DE ANIMAÇÕES-->
+    <script> AOS.init({ duration: 1000 }); </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> <!--BIBLIOTECA DE ÍCONES-->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> <!--BIBLIOTECA DE ÍCONES-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script> <!--BIBLIOTECA DE ÍCONES-->
+
+    <script src="./assets/js/global/contextMenu.js"></script>
+    <script src="./assets/js/global/cursor.js"></script>
+    <script src="./assets/js/global/navMobile.js"></script>
+    <script src="./assets/js/global/voltarProTopo.js"></script>
+    <script src="./assets/js/global/botaoMusica.js"></script>
+    <script src="./assets/js/pages/index/botaoEmail.js"></script>
+    <script src="./assets/js/pages/index/filtroProjeto.js"></script>
+    <script src="./assets/js/pages/index/descricaoProjeto.js"></script>
+    <script src="./assets/js/pages/index/scrollProjeto.js"></script>
+    <script src="./assets/js/pages/index/cursorGrabbing.js"></script>
+    <script src="./assets/js/pages/index/form.js"></script>
+    <script src="./assets/js/global/cores.js"></script>
+    <script type="text/javascript" src="./assets/js/global/card.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".tecno"), {
+		    max: 10,
+		    speed: 400
+	    });
+      ['card'].forEach(className => {
+        VanillaTilt.init(document.querySelectorAll("." + className), {
+        max: 20,
+        speed: 400
+        });
+      });
+    </script>
+
+
+    <!--ÍCONES-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+    <!--ÍCONES-->
+
+    <!--ANIMAÇÕES-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--ANIMAÇÕES-->
+
+  </body>
+
+</html>

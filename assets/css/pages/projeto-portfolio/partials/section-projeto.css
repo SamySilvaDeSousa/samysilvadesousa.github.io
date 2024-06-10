@@ -1,0 +1,310 @@
+/*
+██████  ██████   ██████       ██ ███████ ████████  ██████  ███████
+██   ██ ██   ██ ██    ██      ██ ██         ██    ██    ██ ██     
+██████  ██████  ██    ██      ██ █████      ██    ██    ██ ███████
+██      ██   ██ ██    ██ ██   ██ ██         ██    ██    ██      ██
+██      ██   ██  ██████   █████  ███████    ██     ██████  ███████
+*/
+
+#projetos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: 200px;
+}
+.projetos-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -62px;
+  padding: 180px 0px;
+  background-color: var(--tertiary);
+  border-radius: 35px;
+  overflow: auto;
+  gap: 40px;
+}
+.projetos-conteudo::-webkit-scrollbar-track {
+  display: none;
+}
+.projetos-conteudo p {
+  color: var(--secundary);
+  text-align: center;
+  font-size: 2rem;
+}
+.projeto-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--bg);
+  box-shadow: 0px 5px 0px var(--primary);
+  border-radius: 35px;
+  min-width: 600px;
+  min-height: 500px;
+  overflow-x: hidden;
+}
+.projeto-container:hover {
+  outline: 2px solid var(--primary);
+}
+.projeto-container h4 {
+  text-align: center;
+}
+.projeto-imagem {
+  background-size: cover;
+  background-position: 100% 0%;
+  border-radius: 35px;
+  width: 500px;
+  height: 400px;
+  cursor: pointer;
+}
+.projeto-imagem:hover {
+  background-position: 100% 100%;
+}
+.projeto-container p {
+  color: var(--secundary);
+  font-size: 2rem;
+}
+
+.projeto-botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 10px 0px;
+}
+.projeto-botoes a, .projeto-botoes button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  background-color: var(--bg);
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  padding: 5px 8px;
+  font-weight: 500;
+  transition: 200ms;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.projeto-botoes a:hover, .projeto-botoes button:hover {
+  background-color: var(--primary);
+}
+.projeto-botoes a:hover > span{
+  color: var(--bg);
+}
+.projeto-botoes button:hover > span {
+  color: var(--bg);
+}
+.projeto-botoes span {
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 3.5rem;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.449);
+  justify-content: center;
+  align-items: center;
+  z-index: 11;
+}
+.descricao {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  padding: 20px;
+  border-radius: 35px;
+  max-width: 80%;
+  max-height: 80%;
+  min-width: 25%;
+  overflow: auto;
+  overflow-x: hidden;
+  animation: abrirDescricao 500ms;
+  gap: 20px;
+  box-shadow: 0px 5px 0px var(--primary);
+  z-index: 12;
+}
+.descricao::-webkit-scrollbar-track {
+  border-radius: 100%;
+  margin: 25px 0px;
+}
+.descricao h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+.descricao p {
+  color: var(--secundary);
+  font-size: 2rem;
+}
+.descricao p strong {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.descricao p a {
+  color: var(--primary);
+  font-size: 2rem;
+  text-decoration: underline;
+  transition: 200ms;
+}
+.descricao p a:hover {
+  color: var(--secundary);
+}
+.descricao div:nth-child(3) {
+  margin-top: 5px;
+}
+.descricao-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.descricao-top button {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+}
+.divisoria-descricao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 2px;
+  background-color: var(--tertiary);
+  margin-bottom: -10px;
+  border-radius: 100px;
+  z-index: 8;
+  transform: translateY(-5px);
+}
+.projeto-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.projeto-tecnologias p {
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: var(--bg);
+  padding: 5px 10px;
+  border-radius: 50%;
+  transition: 200ms;
+}
+.projeto-tecnologias p:hover {
+  background-color: var(--tertiary);
+}
+.projeto-tecnologias p:hover > ion-icon {
+  color: var(--secundary);
+}
+.projeto-tecnologias ion-icon {
+  color: var(--secundary);
+  font-size: 5rem;
+  cursor: default;
+  padding: 8px 2px 0px;
+}
+
+.projeto-tecnologia-icone {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+.projeto-tecnologia-tooltip {
+  font-size: 2rem;
+  font-weight: 500;
+  visibility: hidden;
+  background-color: var(--bg);
+  color: var(--secundary);
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 9;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.projeto-tecnologia-icone:hover > .projeto-tecnologia-tooltip {
+  visibility: visible;
+}
+
+#botao-fechar {
+  color: var(--primary);
+  background-color: var(--bg);
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  padding: 5px;
+  float: right;
+  font-size: 3.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 200ms;
+}
+#botao-fechar:hover, #botao-fechar:focus {
+  color: var(--bg);
+  background-color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+███    ███ ███████ ██████  ██  █████  
+████  ████ ██      ██   ██ ██ ██   ██ 
+██ ████ ██ █████   ██   ██ ██ ███████ 
+██  ██  ██ ██      ██   ██ ██ ██   ██ 
+██      ██ ███████ ██████  ██ ██   ██ 
+*/
+
+@media screen and (max-width: 695px) {
+  .projeto-container {
+    min-width: 400px;
+  }
+  .projeto-imagem {
+    width: 300px;
+    height: 200px;
+  } 
+}
+@media screen and (max-width: 500px) {
+  .projeto-container {
+    min-width: 300px;
+  }
+  .projeto-imagem {
+    width: 250px;
+    height: 200px;
+  }
+  .descricao p {
+    font-size: 1.8rem;
+  }
+  .projeto-container h4 {
+    font-size: 3rem;
+  }
+  .descricao h4 {
+    font-size: 3rem;
+  }
+  .projeto-tecnologias ion-icon{
+    font-size: 3rem;
+  }
+  .projetos-conteudo {
+    padding: 100px 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .descricao h4 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .descricao h4 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,108 @@
+/*
+████████ ███████  ██████ ███    ██  ██████  
+   ██    ██      ██      ████   ██ ██    ██ 
+   ██    █████   ██      ██ ██  ██ ██    ██ 
+   ██    ██      ██      ██  ██ ██ ██    ██ 
+   ██    ███████  ██████ ██   ████  ██████  
+*/
+
+#tecnologias {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding-top: 50px;
+  margin-top: -200px;
+}
+.tecnologias-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 185px;
+  margin-top: -62px;
+  padding: 150px 0px 200px 0px;
+  background-color: var(--tertiary);
+  border-radius: 35px;
+}
+.tecnologia-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: -10px auto -80px auto;
+}
+.tecnologia-container h4 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--primary);
+}
+.tecnologia-container h3 {
+  text-align: center;
+}
+.tecnologia-container p {
+  font-size: 2rem;
+  color: var(--secundary);
+}
+.grade-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 40px;
+  max-width: 1000px;
+}
+.grade-tecnologias ion-icon{
+  max-width: 80px;
+  color: var(--secundary);
+  cursor: default;
+}
+.grade-tecnologias .tecno-icon {
+  color: var(--secundary);
+  font-size: 5.5rem;
+}
+#logo-sql {
+  color: var(--secundary);
+  font-size: 45px;
+}
+.icone-relogio {
+  color: var(--secundary);
+  font-size: 5.5rem !important;
+}
+.logo-svg {
+  width: 35px;
+  fill: white;
+}
+.material-symbols-outlined {
+  color: var(--secundary);
+  font-size: 5.5rem;
+}
+.grade-tecnologias img {
+  width: 50px;
+}
+
+
+/*
+███    ███ ███████ ██████  ██  █████  
+████  ████ ██      ██   ██ ██ ██   ██ 
+██ ████ ██ █████   ██   ██ ██ ███████ 
+██  ██  ██ ██      ██   ██ ██ ██   ██ 
+██      ██ ███████ ██████  ██ ██   ██ 
+*/
+
+@media screen and (max-width: 870px) {
+  .tecnologia-container-2 {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .tecnologia-container p {
+    font-size: 1.8rem;
+  }
+  .tecnologias-conteudo {
+    padding: 100px 0px 150px 0px;
+  }
+}

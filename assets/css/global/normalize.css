@@ -1,0 +1,33 @@
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 62.5%;
+  text-decoration: none;
+  cursor: default;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*::selection {
+  color: var(--primary);
+  background-color: var(--bg);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  background-color: var(--bg);
+  margin: 10px;
+  border: 3px solid var(--primary);
+  border-radius: 35px;
+  min-height: 97vh;
+  overflow-x: hidden;
+}

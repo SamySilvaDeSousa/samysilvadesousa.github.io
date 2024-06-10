@@ -1,0 +1,18 @@
+:root {
+  --primary: rgb(0, 170, 255);
+  --secundary: white;
+  --tertiary: rgb(0, 45, 111);
+  --bg: rgb(0, 0, 45);
+  --sombra: rgb(0, 80, 135);
+  --sombra-2: gray;
+  --sombra-3: rgb(0, 100, 22);
+
+  --tertiary-vanish: rgba(0, 45, 111, 0);
+  --vanish: rgba(255,255,255,0);
+
+  --f1: clamp(0.8rem, 1vw, 1rem);
+  --f2: clamp(1rem, 1vw, 1.2rem);
+  --f3: clamp(1.2rem, 1vw, 1.5rem);
+  --f4: clamp(1.5rem, 1vw, 2rem);
+  --f5: clamp(2rem, 1vw, 4rem);
+}
