@@ -32,8 +32,8 @@
   margin-top: 20px;
   border-radius: 50%;
   background-image: url(../../../../files/images/pages/index/foto.jpg);
-  background-size: cover;
-  background-position: 25%;
+  background-size: 250%;
+  background-position: 33% 30%;
   transition: 100ms;
 }
 
