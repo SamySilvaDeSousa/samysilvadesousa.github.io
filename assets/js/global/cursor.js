@@ -28,9 +28,9 @@ botaoHighlight.addEventListener('click', function() {
   
   // Alternar o ícone usando uma classe
   if (botaoHighlight.classList.contains('active')) {
-    botaoHighlight.innerHTML = '<span class="material-symbols-outlined">arrow_selector_tool</span>';
-  } else {
     botaoHighlight.innerHTML = '<span class="material-symbols-outlined">highlight_mouse_cursor</span>';
+  } else {
+    botaoHighlight.innerHTML = '<span class="material-symbols-outlined">arrow_selector_tool</span>';
   }
   botaoHighlight.classList.toggle('active');
 
