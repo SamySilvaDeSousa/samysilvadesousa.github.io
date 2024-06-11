@@ -165,17 +165,17 @@
             <div class="grade-tecnologias">
               <div class="card">
                 <div class="glare"></div>
-                <ion-icon name="logo-html5" title="HTML5"></ion-icon>
+                <ion-icon class="tecno-icon" name="logo-html5" title="HTML5"></ion-icon>
                 <abbr title="Linguagem de Marcação de Hipertexto"><h4>HTML5</h4></abbr>
               </div>
               <div class="card">
                 <div class="glare"></div>
-                <ion-icon name="logo-css3" title="CSS3"></ion-icon>
+                <ion-icon class="tecno-icon" name="logo-css3" title="CSS3"></ion-icon>
                 <abbr title="Folhas de Estilo em Cascata"><h4>CSS3</h4></abbr>
               </div>
               <div class="card">
                 <div class="glare"></div>
-                <ion-icon name="logo-javascript" title="JavaScript"></ion-icon>
+                <ion-icon class="tecno-icon" name="logo-javascript" title="JavaScript"></ion-icon>
                 <h4 title="Linguagem de Programação">JavaScript</h4>
               </div>
             </div>
@@ -216,12 +216,12 @@
             <div class="grade-tecnologias">
               <div class="card">
                 <div class="glare"></div>
-                <i class="tecno-icon fa-brands fa-git-alt" title="Git"></i>
+                <i id="logo-git" class="fa-brands fa-git-alt" title="Git"></i>
                 <h4>Git</h4>
               </div>
               <div class="card">
                 <div class="glare"></div>
-                <ion-icon name="logo-github" title="GitHub"></ion-icon>
+                <ion-icon class="tecno-icon" name="logo-github" title="GitHub"></ion-icon>
                 <h4>GitHub</h4>
               </div>
             </div>
@@ -258,6 +258,13 @@
           <button id="filtrar-frontend" class="botao-filtrar" onclick="filtrarProjeto('frontend')">Front-End</button>
           <button id="filtrar-backend" class="botao-filtrar" onclick="filtrarProjeto('backend')">Back-End</button>
           <button id="filtrar-fullstack" class="botao-filtrar" onclick="filtrarProjeto('fullstack')">Full-Stack</button>
+        </div>
+
+        <div class="projetos-filtro-mobile" data-aos="fade-down">
+          <button id="filtrar-todos-mobile" class="botao-filtrar" onclick="filtrarProjeto('todos')">Todos</button>
+          <button id="filtrar-frontend-mobile" class="botao-filtrar" onclick="filtrarProjeto('frontend')">Front-End</button>
+          <button id="filtrar-backend-mobile" class="botao-filtrar" onclick="filtrarProjeto('backend')">Back-End</button>
+          <button id="filtrar-fullstack-mobile" class="botao-filtrar" onclick="filtrarProjeto('fullstack')">Full-Stack</button>
         </div>
 
         <div class="projetos-conteudo" id="projetos-conteudo">
@@ -444,11 +451,9 @@
 
           <div class="divisoria-config"></div>
 
-          <div class="cursor-highlight-container">
-            <button class="cursor-highlight" title="Ativar/Desativar Efeito do Cursor">
-              <span class="material-symbols-outlined">highlight_mouse_cursor</span>
-            </button>
-          </div>
+          <button class="cursor-highlight" title="Ativar/Desativar Efeito do Cursor">
+            <span class="material-symbols-outlined">highlight_mouse_cursor</span>
+          </button>
         </div>
       </section>
 

@@ -6,6 +6,13 @@
 ██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
 */
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 #logo {
   color: var(--secundary);
   text-transform: uppercase;
@@ -17,16 +24,11 @@
   z-index: 9;
   margin: 10px 0px 8px;
   transition: none;
-}
-#logo:active {
-  transform: translateY(4px);
-  text-shadow: 0px 4px 0px var(--sombra-2);
-}
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+
+  &:active {
+    transform: translateY(4px);
+    text-shadow: 0px 4px 0px var(--sombra-2);
+  }
 }
 
 .nav-mobile {
@@ -46,39 +48,45 @@ header {
   gap: 20px;
   margin: 0px 25px;
   z-index: 20;
+
+  a {
+    background-color: transparent;
+    padding: 0;
+
+    span {
+      color: var(--secundary);
+      font-size: 4rem;
+      cursor: pointer;
+      transition: 300ms;
+      padding: 10px 0px 10px 0px;
+
+      &.ativo {
+        color: var(--primary);
+      }
+    }
+  }
 }
-.nav-mobile a {
-  background-color: transparent;
-  padding: 0;
-}
-.nav-mobile a span {
-  color: var(--secundary);
-  font-size: 4rem;
-  cursor: pointer;
-  transition: 300ms;
-  padding: 10px 0px 10px 0px;
-}
-.nav-mobile a span.ativo {
-  color: var(--primary);
-}
+
 .nav-desktop {
   display: flex;
   list-style: none;
   border: none;
   padding: 10px 0px;
-}
-.nav-desktop a {
-  color: var(--primary);
-  background-color: var(--bg);
-  padding: 10px 20px;
-  font-size: 2rem;
-  font-weight: 500;
-  transition: 200ms;
-}
-.nav-desktop a:hover {
-  color: var(--bg);
-  background-color: var(--primary);
-  font-weight: 600;
+
+  a {
+    color: var(--primary);
+    background-color: var(--bg);
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: 200ms;
+
+    &:hover {
+      color: var(--bg);
+      background-color: var(--primary);
+      font-weight: 600;
+    }
+  }
 }
 
 #nav-link-inicio {
@@ -92,55 +100,33 @@ header {
   box-shadow: 0px 7px 0px var(--sombra);
   transition: none;
 }
-#nav-link-inicio:active {
-  box-shadow: 0px 3.5px 0px var(--sombra);
-  transform: translateY(3.5px);
-}
 
-#nav-link-sobremim {
+#nav-link-sobremim,
+#nav-link-tecno,
+#nav-link-projetos,
+#nav-link-contato {
   border: 3px solid var(--primary);
-  border-left-width: 0;
-  border-right-width: 0;
   box-shadow: 0px 7px 0px var(--sombra);
   transition: none;
 }
-#nav-link-sobremim:active {
-  box-shadow: 0px 3.5px 0px var(--sombra);
-  transform: translateY(3.5px);
-}
 
-#nav-link-tecno {
-  border: 3px solid var(--primary);
-  border-left-width: 0;
-  border-right-width: 0;
-  box-shadow: 0px 7px 0px var(--sombra);
-  transition: none;
-}
-#nav-link-tecno:active {
-  box-shadow: 0px 3.5px 0px var(--sombra);
-  transform: translateY(3.5px);
-}
-
+#nav-link-sobremim,
+#nav-link-tecno,
 #nav-link-projetos {
-  border: 3px solid var(--primary);
   border-left-width: 0;
   border-right-width: 0;
-  box-shadow: 0px 7px 0px var(--sombra);
-  transition: none;
-}
-#nav-link-projetos:active {
-  box-shadow: 0px 3.5px 0px var(--sombra);
-  transform: translateY(3.5px);
 }
 
 #nav-link-contato {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  border: 3px solid var(--primary);
   border-left-width: 0;
-  box-shadow: 0px 7px 0px var(--sombra);
-  transition: none;
 }
+
+#nav-link-inicio:active,
+#nav-link-sobremim:active,
+#nav-link-tecno:active,
+#nav-link-projetos:active,
 #nav-link-contato:active {
   box-shadow: 0px 3.5px 0px var(--sombra);
   transform: translateY(3.5px);

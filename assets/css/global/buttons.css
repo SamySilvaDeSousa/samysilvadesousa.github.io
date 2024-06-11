@@ -27,23 +27,28 @@
   cursor: pointer;
   box-shadow: 0px 8px 0px var(--sombra);
   transition: none;
+
+  &:hover {
+    color: var(--bg);
+    background-color: var(--primary);
+
+    > span {
+      color: var(--bg);
+    }
+  }
+
+  &:active {
+    transform: translateY(4px);
+    box-shadow: 0px 4px 0px var(--sombra);
+  }
+
+  span {
+    color: var(--primary);
+    font-size: 50px;
+    cursor: pointer;
+  }
 }
-#subir:active {
-  transform: translateY(4px);
-  box-shadow: 0px 4px 0px var(--sombra);
-}
-#subir:hover {
-  color: var(--bg);
-  background-color: var(--primary);
-}
-#subir:hover > span {
-  color: var(--bg);
-}
-#subir span {
-  color: var(--primary);
-  font-size: 50px;
-  cursor: pointer;
-}
+
 #config {
   display: flex;
   justify-content: center;
@@ -60,22 +65,26 @@
   cursor: pointer;
   box-shadow: 0px 8px 0px var(--sombra);
   transition: none;
-}
-#config span {
-  color: var(--primary);
-  font-size: 3.5rem;
-  cursor: pointer;
-}
-#config:active {
-  transform: translateY(4px);
-  box-shadow: 0px 4px 0px var(--sombra);
-}
-#config:hover {
-  color: var(--bg);
-  background-color: var(--primary);
-}
-#config:hover > span {
-  color: var(--bg);
+
+  &:hover {
+    color: var(--bg);
+    background-color: var(--primary);
+
+    > span {
+      color: var(--bg);
+    }
+  }
+  
+  &:active {
+    transform: translateY(4px);
+    box-shadow: 0px 4px 0px var(--sombra);
+  }
+
+  span {
+    color: var(--primary);
+    font-size: 3.5rem;
+    cursor: pointer;
+  }
 }
 
 .divisoria-config {
@@ -109,63 +118,70 @@
   z-index: 10;
   transform: translateY(300px);
   box-shadow: 0px 8px 0px var(--sombra);
+
+  &.aberto {
+    transform: translateY(0);
+  }
+
+  button {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+
+    &.cor-azul {
+      background-color: rgb(0, 149, 255);
+      box-shadow: 0px 8px 0px rgb(0, 80, 135);
+
+      &:active {
+        transform: translateY(4px);
+        box-shadow: 0px 4px 0px rgb(0, 80, 135);
+      }
+    }
+
+    &.cor-verde {
+      background-color: rgb(0, 197, 0);
+      box-shadow: 0px 8px 0px rgb(0, 100, 22);
+
+      &:active {
+        transform: translateY(4px);
+        box-shadow: 0px 4px 0px rgb(0, 100, 22);
+      }
+    }
+  }
 }
-.aberto {
-  transform: translateY(0);
-}
-.cores button {
-  display: inline-block;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 8px;
-}
-.cor-azul {
-  background-color: rgb(0, 149, 255);
-  box-shadow: 0px 8px 0px rgb(0, 80, 135);
-}
-.cor-azul:active {
-  transform: translateY(4px);
-  box-shadow: 0px 4px 0px rgb(0, 80, 135);
-}
-.cor-verde {
-  background-color: rgb(0, 197, 0);
-  box-shadow: 0px 8px 0px rgb(0, 100, 22);
-}
-.cor-verde:active {
-  transform: translateY(4px);
-  box-shadow: 0px 4px 0px rgb(0, 100, 22);
-}
-.cursor-highlight-container {
-  display: inline-block;
-}
+
 .cursor-highlight {
   background-color: var(--bg);
   position: relative;
-}
-.cursor-highlight span { 
-  position: absolute;
-  top: -1px;
-  left: -3px;
-  font-size: 3.5rem;
-  color: var(--primary);
-  background-color: var(--bg);
-  border: 3px solid var(--primary);
-  border-radius: 50%;
-  padding: 8px 8px;
-  cursor: pointer;
-  box-shadow: 0px 8px 0px var(--sombra);
-  transition: none;
-}
-.cursor-highlight:hover > span {
-  color: var(--bg);
-  background-color: var(--primary);
-}
-.cursor-highlight span:active {
-  transform: translateY(4px);
-  box-shadow: 0px 4px 0px var(--sombra);
+
+  span {
+    position: absolute;
+    top: -1px;
+    left: -3px;
+    font-size: 3.5rem;
+    color: var(--primary);
+    background-color: var(--bg);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    padding: 8px 8px;
+    cursor: pointer;
+    box-shadow: 0px 8px 0px var(--sombra);
+    transition: none;
+
+    &:hover {
+      color: var(--bg);
+      background-color: var(--primary);
+    }
+
+    &:active {
+      transform: translateY(4px);
+      box-shadow: 0px 4px 0px var(--sombra);
+    }
+  }
 }
 
 #controle-volume {
@@ -179,26 +195,30 @@
   box-shadow: 0px 5px 0px var(--sombra);
   appearance: none;
   cursor: pointer;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 16px;
+    background: var(--primary);
+    cursor: grab; 
+
+    &:active {
+      cursor: grabbing;
+    }
+  }
+
+  &::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: var(--secundary);
+    border-right: 2px solid var(--bg);
+    border-radius: 50%;
+    cursor: pointer;
+  }
 }
-#controle-volume::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 30px;
-  height: 16px;
-  background: var(--primary);
-  cursor: grab; 
-}
-#controle-volume::-webkit-slider-thumb:active {
-  cursor: grabbing;
-}
-#controle-volume::-moz-range-thumb {
-  width: 16px;
-  height: 16px;
-  background: var(--secundary);
-  border-right: 2px solid var(--bg);
-  border-radius: 50%;
-  cursor: pointer;
-}
+
 #botao-musica {
   display: flex;
   justify-content: center;
@@ -215,23 +235,28 @@
   cursor: pointer;
   box-shadow: 0px 8px 0px var(--sombra);
   transition: none;
+
+  &:hover {
+    color: var(--bg);
+    background-color: var(--primary);
+
+    > span {
+      color: var(--bg);
+    }
+  }
+  
+  &:active {
+    transform: translateY(4px);
+    box-shadow: 0px 4px 0px var(--sombra);
+  }
+
+  span {
+    color: var(--primary);
+    font-size: 4rem;
+    cursor: pointer;
+  }
 }
-#botao-musica:active {
-  transform: translateY(4px);
-  box-shadow: 0px 4px 0px var(--sombra);
-}
-#botao-musica:hover {
-  color: var(--bg);
-  background-color: var(--primary);
-}
-#botao-musica:hover > span {
-  color: var(--bg);
-}
-#botao-musica span {
-  color: var(--primary);
-  font-size: 4rem;
-  cursor: pointer;
-}
+
 
 /*
 ███    ███ ███████ ██████  ██  █████  

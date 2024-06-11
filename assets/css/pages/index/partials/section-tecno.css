@@ -32,20 +32,22 @@
   justify-content: start;
   align-items: center;
   margin: -10px auto -80px auto;
+
+  h4 {
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  h3 {
+    text-align: center;
+  }
+  p {
+    font-size: 2rem;
+    color: var(--secundary);
+  }
 }
-.tecnologia-container h4 {
-  font-size: 2.5rem;
-  font-style: normal;
-  font-weight: 600;
-  color: var(--primary);
-}
-.tecnologia-container h3 {
-  text-align: center;
-}
-.tecnologia-container p {
-  font-size: 2rem;
-  color: var(--secundary);
-}
+
 .grade-tecnologias {
   display: flex;
   flex-wrap: wrap;
@@ -54,34 +56,35 @@
   gap: 40px;
   margin: 40px;
   max-width: 1000px;
-}
-.grade-tecnologias ion-icon{
-  max-width: 80px;
-  color: var(--secundary);
-  cursor: default;
-}
-.grade-tecnologias .tecno-icon {
-  color: var(--secundary);
-  font-size: 5.5rem;
-}
-#logo-sql {
-  color: var(--secundary);
-  font-size: 45px;
-}
-.icone-relogio {
-  color: var(--secundary);
-  font-size: 5.5rem !important;
-}
-.logo-svg {
-  width: 35px;
-  fill: white;
-}
-.material-symbols-outlined {
-  color: var(--secundary);
-  font-size: 5.5rem;
-}
-.grade-tecnologias img {
-  width: 50px;
+
+  .tecno-icon {
+    color: var(--secundary);
+    font-size: 5rem;
+  }
+  img {
+    width: 50px;
+  }
+  #logo-sql {
+    color: var(--secundary);
+    margin-top: 3px;
+    font-size: 4.5rem;
+  }
+  #logo-git {
+    font-size: 5.5rem;
+    color: var(--secundary);
+  }
+  .icone-relogio {
+    color: var(--secundary);
+    font-size: 5.5rem !important;
+  }
+  .logo-svg {
+    width: 35px;
+    fill: white;
+  }
+  .material-symbols-outlined {
+    color: var(--secundary);
+    font-size: 5.5rem;
+  }
 }
 
 

@@ -49,76 +49,85 @@
   gap: 50px;
   box-shadow: 0px 8px 0px var(--sombra);
   border: 3px solid var(--primary);
+
+  input,
+  textarea {
+    width: 100%;
+    background-color: var(--tertiary);
+    border: 3px solid var(--primary);
+    border-radius: 100px;
+    padding: 10px;
+    resize: none;
+    color: var(--secundary);
+    font-size: 2rem;
+    cursor: text;
+    outline: 0;
+    caret-color: var(--secundary);
+  }
+  #mensagem {
+    overflow-x: hidden;
+    border-radius: 30px;
+    padding: 10px;
+
+    &::-webkit-scrollbar-track {
+      background-color: var(--tertiary);
+      border-radius: 100%;
+      margin: 20px 0px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--bg);
+      cursor: default;
+    }
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: none;
+    box-shadow: 0px 8px 0px var(--sombra);
+
+    &:hover {
+      background-color: var(--primary);
+
+      > span {
+        color: var(--bg);
+      }
+    }
+
+    &:active {
+      transform: translateY(4px);
+      box-shadow: 0px 4px 0px var(--sombra);
+    }
+  }
+  span {
+    font-size: 4rem;
+    color: var(--primary);
+    cursor: pointer;
+  }
+  #loading {
+    animation: girando 1s infinite linear;
+  }
 }
-.contato-form input, .contato-form textarea {
-  width: 100%;
-  background-color: var(--tertiary);
-  border: 3px solid var(--primary);
-  border-radius: 100px;
-  padding: 10px;
-  resize: none;
-  color: var(--secundary);
-  font-size: 2rem;
-  cursor: text;
-  outline: 0;
-  caret-color: var(--secundary);
-}
-.contato-form textarea {
-  overflow-x: hidden;
-  border-radius: 30px;
-  padding: 10px;
-}
-#mensagem::-webkit-scrollbar-track {
-  background-color: var(--tertiary);
-  border-radius: 100%;
-  margin: 20px 0px;
-}
-#mensagem::-webkit-scrollbar-thumb {
-  background-color: var(--bg);
-  cursor: default;
-}
+
 .input-item {
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  label {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary);
+    padding-left: 20px;
+  }
 }
-.input-item label {
-  font-size: 2rem;
-  font-weight: 500;
-  color: var(--primary);
-  padding-left: 20px;
-}
-.contato-form button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--bg);
-  border: 3px solid var(--primary);
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-  transition: none;
-  box-shadow: 0px 8px 0px var(--sombra);
-}
-.contato-form button:active {
-  transform: translateY(4px);
-  box-shadow: 0px 4px 0px var(--sombra);
-}
-.contato-form button:hover {
-  background-color: var(--primary);
-}
-.contato-form button:hover > span {
-  color: var(--bg);
-}
-.contato-form span {
-  font-size: 4rem;
-  color: var(--primary);
-  cursor: pointer;
-}
-.contato-form #loading {
-  animation: girando 1s infinite linear;
-}
+
 .contato-redes {
   display: flex;
   flex-direction: row;
@@ -132,50 +141,52 @@
   gap: 50px;
   box-shadow: 0px 8px 0px var(--sombra);
   border: 3px solid var(--primary);
-}
-.contato-redes a, .contato-redes button {
-  color: var(--primary);
-  background-color: var(--bg);
-  border: 3px solid var(--primary);
-  border-radius: 50%;
-  padding: 5px 8px;
-  margin-top: 10px;
-  min-width: 60px;
-  min-height: 60px;
-  cursor: pointer;
-  box-shadow: 0px 8px 0px var(--sombra);
-  transition: none;
-}
-.contato-redes a:active, .contato-redes button:active {
-  transform: translateY(4px);
-  box-shadow: 0px 4px 0px var(--sombra);
+
+  a,
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    background-color: var(--bg);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    padding: 5px 8px;
+    margin-top: 10px;
+    min-width: 60px;
+    min-height: 60px;
+    cursor: pointer;
+    box-shadow: 0px 8px 0px var(--sombra);
+    transition: none;
+
+    &:hover {
+      color: var(--bg);
+      background-color: var(--primary);
+
+      > span {
+        color: var(--bg);
+      }
+    }
+    &:active {
+      transform: translateY(4px);
+      box-shadow: 0px 4px 0px var(--sombra);
+    }
+    span {
+      color: var(--primary);
+      font-size: 4rem;
+      cursor: pointer;
+    }
+  }
+  ion-icon {
+    font-size: 4rem;
+    cursor: pointer;
+  }
+  span {
+    color: var(--secundary);
+    font-size: 2rem;
+  }
 }
 
-.contato-redes a:hover, .contato-redes button:hover {
-  color: var(--bg);
-  background-color: var(--primary);
-}
-.contato-redes a:hover > span, .contato-redes button:hover > span {
-  color: var(--bg);
-}
-.contato-redes button span {
-  color: var(--primary);
-  font-size: 4rem;
-  cursor: pointer;
-}
-.contato-redes ion-icon {
-  font-size: 4rem;
-  cursor: pointer;
-}
-.contato-redes span {
-  color: var(--secundary);
-  font-size: 2rem;
-}
-.contato-redes.card {
-  flex-direction: row;
-  gap: 40px;
-  margin: 0px 40px;
-} 
 .contato-redes-container {
   display: flex;
   flex-direction: column;
@@ -206,20 +217,27 @@
 @media screen and (max-width: 500px) {
   .contato-form {
     padding: 30px;
-  }
-  .contato-form input, .contato-form textarea {
-    font-size: 1.8rem;
+
+    input,
+    textarea {
+      font-size: 1.8rem;
+    }
   }
   .contato-conteudo {
     padding: 100px 0px;
   }
-  .contato-redes a, .contato-redes button {
-    width: 60px;
-    height: 60px;
-    padding: 4px 7px;
-  }
-  .contato-redes ion-icon, .contato-redes button span {
-    font-size: 4rem;
+  .contato-redes {
+    a,
+    button {
+      width: 60px;
+      height: 60px;
+      padding: 4px 7px;
+
+      ion-icon,
+      span {
+        font-size: 4rem;
+      }
+    }
   }
   .input-item label {
     font-size: 1.8rem;
