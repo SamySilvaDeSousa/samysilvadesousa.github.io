@@ -202,11 +202,7 @@
     width: 30px;
     height: 16px;
     background: var(--primary);
-    cursor: grab; 
-
-    &:active {
-      cursor: grabbing;
-    }
+    cursor: default; 
   }
 
   &::-moz-range-thumb {
