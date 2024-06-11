@@ -211,7 +211,6 @@
     background: var(--secundary);
     border-right: 2px solid var(--bg);
     border-radius: 50%;
-    cursor: pointer;
   }
 }
 
