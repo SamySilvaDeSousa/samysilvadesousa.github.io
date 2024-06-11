@@ -273,8 +273,8 @@
   .divisoria-config {
     display: none;
   }
-  .cursor-highlight-container {
-    display: none;
+  .cursor-highlight {
+    display: none !important;
   }
 }
 @media screen and (max-width: 733px) {
