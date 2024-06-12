@@ -140,6 +140,7 @@ a {
   z-index: 12;
   display: none;
   text-wrap: nowrap;
+  box-shadow: 0px 6px 0px var(--sombra);
 }
 
 /*

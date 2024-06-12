@@ -330,11 +330,16 @@
     background-color: var(--bg);
 
     > ion-icon {
-      color: var(--primary);
+      color: var(--secundary);
     }
+  }
+  
+  &:hover > .projeto-tecnologia-tooltip {
+    visibility: visible;
   }
 
   ion-icon {
+    color: var(--primary);
     margin-top: 3px;
   }
 
@@ -352,10 +357,6 @@
     top: -65%;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-  &:hover > .projeto-tecnologia-tooltip {
-    visibility: visible;
   }
 }
 
