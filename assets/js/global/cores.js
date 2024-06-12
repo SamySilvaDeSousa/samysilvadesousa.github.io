@@ -14,7 +14,7 @@ config.addEventListener('click', () => {
 
 function ativarCor(cor) {
   const cores = {
-    'azul': ['rgb(0, 170, 255)', 'white', 'rgb(0, 45, 111)', 'rgb(0, 20, 45)', 'rgb(0, 80, 135)', 'gray', 'rgb(0, 100, 22)'],
+    'azul': ['rgb(0, 170, 255)', 'white', 'rgb(0, 45, 111)', 'rgb(0, 0, 45)', 'rgb(0, 80, 135)', 'gray', 'rgb(0, 100, 22)'],
     'verde': ['rgb(0, 197, 0)', 'white', 'rgb(0, 62, 0)', 'rgb(0, 25, 1)', 'rgb(0, 100, 22)', 'gray', 'rgb(0, 80, 135)']
   };
 

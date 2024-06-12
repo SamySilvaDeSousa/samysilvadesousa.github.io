@@ -8,18 +8,18 @@
 }
 .animacao-inicial {
   background-color: var(--tertiary);
-  z-index: 20;
+  z-index: 23;
   animation: cortinas 1s ease-in-out forwards;
 }
 .animacao-inicial2 {
   background-color: var(--sombra);
-  z-index: 19;
+  z-index: 22;
   animation: cortinas 1s ease-in-out forwards;
   animation-delay: 50ms;
 }
 .animacao-inicial3 {
   background-color: var(--primary);
-  z-index: 18;
+  z-index: 21;
   animation: cortinas 1s ease-in-out forwards;
   animation-delay: 100ms;
 }
@@ -44,10 +44,11 @@ h3 {
   font-size: 5rem;
   text-shadow: 0px 6px 0px var(--sombra);
   text-transform: uppercase;
-}
-h3 span {
-  color: var(--secundary);
-  margin-left: 5px;
+
+  span {
+    color: var(--secundary);
+    margin-left: 5px;
+  }
 }
 h4 {
   color: var(--primary);
@@ -71,7 +72,7 @@ h4 {
   transform-style: preserve-3d;
   border: 3px solid var(--primary);
   box-shadow: 0px 8px 0px var(--sombra);
-  gap: 20px;
+  gap: 15px;
 
   &:hover > h4, abbr, p, ion-icon, span, i, img, svg {
     transform: translate3d(0,0,25px);
