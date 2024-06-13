@@ -164,6 +164,9 @@ a {
   #botao-direito {
     display: none !important;
   }
+  .glare {
+    display: none;
+  }
 }
 @media screen and (max-width: 695px) {
   h2 {
