@@ -64,22 +64,9 @@
   img {
     width: 50px;
   }
-  #logo-sql {
-    color: var(--secundary);
-    margin-top: 3px;
-    font-size: 4.5rem;
-  }
-  #logo-git {
-    font-size: 5.5rem;
-    color: var(--secundary);
-  }
   .icone-relogio {
     color: var(--secundary);
     font-size: 5.5rem !important;
-  }
-  .logo-svg {
-    width: 35px;
-    fill: white;
   }
   .material-symbols-outlined {
     color: var(--secundary);

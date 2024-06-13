@@ -27,7 +27,7 @@ function ativarCor(cor) {
     // Atualizar favicon
     const favicon = document.querySelector('link[rel="icon"]');
     if (favicon) {
-      favicon.href = `../../assets/files/svg/global/favicon-${cor}.svg`;
+      favicon.href = `../../assets/files/images/global/favicon-${cor}.svg`;
     } else {
       const newFavicon = document.createElement('link');
       newFavicon.rel = 'icon';
