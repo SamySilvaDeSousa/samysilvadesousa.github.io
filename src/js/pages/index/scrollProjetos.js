@@ -2,7 +2,7 @@ let isDragging = false;
 let startX;
 let scrollLeft;
 
-const scrollableContainer = document.getElementById('projetos-super-container');
+const scrollableContainer = document.getElementById('projetos-wrapper');
 
 scrollableContainer.addEventListener('mousedown', (e) => {
   isDragging = true;

@@ -102,7 +102,29 @@ strong {
 ██      ██   ██  ██████   █████  ███████    ██     ██████  ███████ 
 */
 
-#projetos-super-container::-webkit-scrollbar-track {
+#projetos-super-container:after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  box-shadow: inset 30px 0 10px -10px var(--tertiary) !important;
+  pointer-events: none;
+  z-index: 10;
+}
+#projetos-super-container:before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  box-shadow: inset -30px 0 10px -10px var(--tertiary) !important;
+  pointer-events: none;
+  z-index: 10;
+}
+#projetos-wrapper::-webkit-scrollbar-track {
   margin: 0px 10px;
   background-color: var(--tertiary);
 }
