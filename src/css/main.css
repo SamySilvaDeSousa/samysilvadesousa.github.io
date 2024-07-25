@@ -1,0 +1,12 @@
+@import './animations.css';
+@import './reset.css';
+@import './fonts.css';
+@import './variables.css';
+
+@import './components/global.css';
+@import './components/buttons.css';
+@import './components/card.css';
+@import './components/refreshPage.css';
+@import './components/scrollbar.css';
+@import './components/shadows.css';
+@import './components/titles.css';

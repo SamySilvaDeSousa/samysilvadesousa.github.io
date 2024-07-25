@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth overflow-x-hidden">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Samy Silva de Sousa">
+  <meta name="description" content="Portfólio de Desenvolvedor Web - Samy Silva de Sousa">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Samy Silva, Samy Silva de Sousa, Portfolio, FrontEnd, BackEnd, Programador, Web, Dev">
+  <meta property="og:image" content="src/assets/images/nome.png">
+  <title>Samy Silva - Desenvolvedor Web</title>
+  <link rel="icon" href="src/assets/images/favicon-azul.svg" type="image/x-icon">
+
+  <link rel="stylesheet" href="src/css/main.css"> <!--CSS-->
+  <script src="https://cdn.tailwindcss.com"></script> <!--TAILWIND CDN-->
+
+</head>
+
+<body class="flex flex-col overflow-x-hidden relative text-[--secondary] bg-[--bg] m-2.5 border-primary rounded-3xl">
+
+  <div class="animate-refreshPage bg-[--tertiary] z-50"></div>
+  <div class="animate-refreshPage bg-[--sombra] delay-50 z-[49]"></div>
+  <div class="animate-refreshPage bg-[--primary] delay-100 z-[48]"></div>
+
+  <div id="botao-direito" class="text-[--secondary] text-xl text-nowrap bg-[--bg] border-primary box-shadow-2xl rounded-3xl py-3 px-5 hidden absolute z-40">Fala, Dev!</div>
+
+  <!--
+  ██   ██ ███████  █████  ██████  ███████ ██████  
+  ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+  ███████ █████   ███████ ██   ██ █████   ██████  
+  ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+  ██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+  -->
+
+  <header id="inicio" class="flex flex-col justify-between items-center relative h-48 md:h-96" style="background-image: url(src/assets/images/Portfolio_Inicio.png); background-position: 100% 50%; background-size: cover;">
+
+    <nav class="flex justify-center items-center">
+      <div id="navbar" class="flex flex-row justify-center items-center fixed bottom-5 z-40 list-none">
+        <a id="nav-link-voltar" class="flex justify-center items-center bg-transparent padding-0 group" href="index.html" title="Voltar">
+          <span id="voltar-icon" class="material-symbols-outlined sm:px-6 md:px-8 lg:px-10 text-[--secondary] group-hover:text-[--bg] bg-[--bg] group-hover:bg-[--primary] py-2.5 px-2.5 !text-4xl group-hover:!font-semibold border-primary border-r-0 border-l-[3px] rounded-l-3xl box-shadow-xl_click transition-none cursor-pointer">undo</span>
+          <span id="tooltip_voltar" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center bg-[--bg] box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-20 border-primary">Voltar</span>
+        </a>
+        <a id="nav-link-descricao" class="flex justify-center items-center bg-transparent padding-0 group" href="#inicio" title="Descrição">
+          <span id="descricao-icon" class="ativo material-symbols-outlined sm:px-6 md:px-8 lg:px-10 text-[--secondary] group-hover:text-[--bg] bg-[--bg] group-hover:bg-[--primary] py-2.5 px-2.5 !text-4xl border-primary border-x-0 box-shadow-xl_click transition-none cursor-pointer">article</span>
+          <span id="tooltip_descricao" class="pointer-events-none hidden xl:group-hover:flex xl:group-focus:flex text-xl text-[--secondary] text-center bg-[--bg] box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-20 border-primary">Descrição</span>
+        </a>
+        <a id="nav-link-paginas" class="flex justify-center items-center bg-transparent padding-0 group" href="#paginas" title="Páginas">
+          <span id="paginas-icon" class="material-symbols-outlined sm:px-6 md:px-8 lg:px-10 text-[--secondary] group-hover:text-[--bg] bg-[--bg] group-hover:bg-[--primary] py-2.5 px-2.5 !text-4xl border-primary border-l-0 border-r-[3px] rounded-r-3xl box-shadow-xl_click transition-none cursor-pointer">photo</span>
+          <span id="tooltip_paginas" class="pointer-events-none hidden xl:group-hover:flex xl:group-focus:flex text-xl text-[--secondary] text-center bg-[--bg] box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-20 border-primary">Páginas</span>
+        </a>
+      </div>
+    </nav>
+    <h2 class="h2 translate-y-[36px] sm:translate-y-[48px] md:translate-y-[60px] lg:translate-y-[72px] xl:translate-y-[78px]" style="background: linear-gradient(var(--tertiary) 50%, var(--bg) 50%); background-clip: text;">Descrição</h2>
+  </header>
+
+  <main class="flex flex-col justify-center items-center">
+
+    <!--
+    ██████  ███████ ███████  ██████ ██████  ██  ██████  █████   ██████  
+    ██   ██ ██      ██      ██      ██   ██ ██ ██      ██   ██ ██    ██ 
+    ██   ██ █████   ███████ ██      ██████  ██ ██      ███████ ██    ██ 
+    ██   ██ ██           ██ ██      ██   ██ ██ ██      ██   ██ ██    ██ 
+    ██████  ███████ ███████  ██████ ██   ██ ██  ██████ ██   ██  ██████  
+    -->
+
+    <section id="descricao" class="flex flex-col justify-start items-center pb-48 w-full overflow-hidden">
+
+      <div id="descricao-conteudo" class="flex flex-col justify-center items-center w-full gap-20 sm:gap-32 py-28 sm:py-36 bg-[--tertiary] rounded-3xl">
+        
+        <div id="descricao-container" class="flex flex-col justify-center items-center gap-9 max-w-[1024px]" data-aos="fade-down">
+          <h3 class="h3">Resumo</h3>
+          <p class="text-lg sm:text-xl font-normal text-center w-full px-5">Portfólio pessoal feito durante minha graduação <br> utilizando as tecnologias <b>HTML, CSS, JavaScript, e TailwindCSS</b>. <br> Desenvolvido com o objetivo de expôr meus conhecimentos e trabalhos.</p>
+        </div>
+        
+        <div id="tecnologia-container" class="flex flex-col justify-start items-center -mt-2 -mb-20 w-full">
+          <h3 class="h3 !mb-9">Tecnologias</h3>
+          <p class="text-lg sm:text-xl font-normal text-center mb-12 mx-5">Tecnologias usadas para desenvolver o Projeto:</p>
+
+          <div id="grade-tecnologias" class="flex flex-row flex-wrap justify-center items-center gap-5 mx-5 mb-20 xl:w-[1024px]">
+
+            <div id="tooltip-container_tecnologia" class="frontend flex flex-col justify-center items-center relative group" data-aos="fade-up">
+
+              <div class="card box-shadow-xl" tabindex="0">
+                <div class="glare"></div>
+                <ion-icon class="text-[--secondary] text-5xl" name="logo-html5" title="HTML5"></ion-icon>
+                <abbr title="Linguagem de Marcação de Hipertexto" class="hidden sm:block"><h5 class="h5 rounded-">HTML</h5></abbr>
+              </div>
+              <span id="tooltip-html_tecno" class="pointer-events-none hidden group-hover:flex sm:group-hover:hidden justify-center text-xl text-[--secondary] text-center bg-[--bg] box-shadow-md rounded-3xl py-1 px-5 absolute z-10 -top-14 border-primary">HTML</span>
+              
+            </div>
+            <div id="tooltip-container_tecnologia" class="frontend flex flex-col justify-center items-center relative group" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="card box-shadow-xl" tabindex="0">
+                <div class="glare"></div>
+                <ion-icon class="text-[--secondary] text-5xl" name="logo-css3" title="CSS3"></ion-icon>
+                <abbr title="Folhas de Estilo em Cascata" class="hidden sm:block"><h5 class="h5">CSS</h5></abbr>
+              </div>
+              <span id="tooltip-css_tecno" class="pointer-events-none hidden group-hover:flex sm:group-hover:hidden justify-center text-xl text-[--secondary] text-center bg-[--bg] box-shadow-md rounded-3xl py-1 px-5 absolute z-10 -top-14 border-primary">CSS</span>
+
+            </div>
+            <div id="tooltip-container_tecnologia" class="frontend flex flex-col justify-center items-center relative group" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="card box-shadow-xl" tabindex="0">
+                <div class="glare"></div>
+                <ion-icon class="text-[--secondary] text-5xl" name="logo-javascript" title="JavaScript"></ion-icon>
+                <h5 title="Linguagem de Programação" class="h5 hidden sm:block">JavaScript</h5>
+              </div>
+              <span id="tooltip-javascript_tecno" class="pointer-events-none hidden group-hover:flex sm:group-hover:hidden justify-center text-xl text-[--secondary] text-center bg-[--bg] box-shadow-md rounded-3xl py-1 px-5 absolute z-10 -top-14 border-primary">JavaScript</span>
+
+            </div>
+            <div id="tooltip-container_tecnologia" class="frontend flex flex-col justify-center items-center relative group" data-aos="fade-up" data-aos-delay="300">
+
+              <div class="card box-shadow-xl" tabindex="0">
+                <div class="glare"></div>
+                <svg id="logo-tailwindcss" class="w-12" viewBox="0 0 15 15" fill="white" xmlns="http://www.w3.org/2000/svg">
+                  <path class="sm:group-hover:!fill-[--secondary] group-hover:!fill-[--bg] sm:group-focus:!fill-[--secondary] group-focus:!fill-[--bg]" d="M7.50006 2.5C6.47409 2.5 5.59203 2.77691 4.89966 3.37037C4.21227 3.95956 3.76259 4.81729 3.51314 5.88638C3.45869 6.1197 3.57742 6.35885 3.79619 6.45654C4.01496 6.55423 4.27228 6.483 4.40967 6.28672C4.7263 5.8344 5.04244 5.56261 5.3462 5.42313C5.64038 5.28805 5.95748 5.26068 6.32069 5.35797C6.68723 5.45615 6.97097 5.74369 7.41643 6.22816L7.43082 6.24382C7.76661 6.60905 8.17623 7.0546 8.73649 7.40028C9.31785 7.75898 10.0413 7.99999 11.0001 7.99999C12.026 7.99999 12.9081 7.72307 13.6005 7.12962C14.2878 6.54043 14.7375 5.6827 14.987 4.61361C15.0414 4.38029 14.9227 4.14114 14.7039 4.04345C14.4852 3.94576 14.2278 4.01698 14.0904 4.21326C13.7738 4.66559 13.4577 4.93737 13.1539 5.07686C12.8597 5.21194 12.5426 5.23931 12.1794 5.14202C11.8129 5.04384 11.5291 4.7563 11.0837 4.27182L11.0693 4.25616C10.7335 3.89093 10.3239 3.44538 9.76362 3.09971C9.18227 2.74101 8.45883 2.5 7.50006 2.5Z" fill="white"/>
+                  <path class="sm:group-hover:!fill-[--secondary] group-hover:!fill-[--bg] sm:group-focus:!fill-[--secondary] group-focus:!fill-[--bg]" d="M4.00006 6.99999C2.97409 6.99999 2.09203 7.2769 1.39966 7.87036C0.712271 8.45955 0.262592 9.31727 0.0131365 10.3864C-0.0413057 10.6197 0.0774162 10.8588 0.296186 10.9565C0.514956 11.0542 0.772276 10.983 0.909673 10.7867C1.2263 10.3344 1.54244 10.0626 1.8462 9.92312C2.14038 9.78804 2.45747 9.76067 2.82069 9.85796C3.18723 9.95614 3.47097 10.2437 3.91643 10.7282L3.93082 10.7438C4.2666 11.109 4.67624 11.5546 5.23649 11.9003C5.81785 12.259 6.54128 12.5 7.50006 12.5C8.52602 12.5 9.40808 12.2231 10.1005 11.6296C10.7878 11.0404 11.2375 10.1827 11.487 9.1136C11.5414 8.88027 11.4227 8.64113 11.2039 8.54343C10.9852 8.44574 10.7278 8.51697 10.5904 8.71325C10.2738 9.16558 9.95768 9.43736 9.65391 9.57684C9.35974 9.71192 9.04264 9.7393 8.67942 9.64201C8.31289 9.54383 8.02915 9.25628 7.58369 8.77181L7.56929 8.75615C7.23351 8.39092 6.82388 7.94537 6.26362 7.59969C5.68227 7.241 4.95883 6.99999 4.00006 6.99999Z" fill="white"/>
+                </svg>
+                <h5 title="Framework de CSS" class="h5 hidden sm:block">TailwindCSS</h5>
+              </div>
+              <span id="tooltip-tailwindcss_tecno" class="pointer-events-none hidden group-hover:flex sm:group-hover:hidden justify-center text-xl text-[--secondary] text-center bg-[--bg] box-shadow-md rounded-3xl py-1 px-5 absolute z-10 -top-14 border-primary">TailwindCSS</span>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-11 w-full px-5" data-aos="fade-down">
+          <h3 class="h3">Design</h3>
+          <div id="design-container" class="frontend flex flex-col !justify-evenly items-center gap-14 bg-[--bg] border-primary box-shadow-xl rounded-3xl xl:max-w-[1024px] !w-full overflow-x-hidden p-5 relative">
+
+            <div class="flex flex-col lg:flex-row gap-16 lg:gap-0 justify-around items-center lg:items-start w-full">
+              <div id="tipografia-container" class="flex flex-col justify-center items-center gap-5">
+                <h4 class="h4 !text-3xl md:!text-[2.5rem] text-center mb-9">Tipografia</h4>
+                
+                <p class="text-3xl md:text-4xl font-normal text-center">IBM Plex Mono</p>
+                <p class="text-3xl md:text-4xl font-normal text-center font-[Righteous] -mb-5">Righteous</p>
+                <div></div>
+              </div>
+              <div id="cores-container" class="flex flex-col justify-center items-center gap-14">
+                <h4 class="h4 !text-3xl md:!text-[2.5rem] text-center">Cores</h4>
+
+                <div id="grid-cores" class="grid grid-cols-2 sm:grid-cols-3 gap-5">
+                  <div class="flex justify-center items-center bg-[--primary] w-28 h-28 rounded-3xl border-primary box-shadow-2xl mb-[8px]" tabindex="0">
+                    <p class="text-lg sm:text-xl font-medium text-center">#00aaff</p>
+                  </div>
+                  <div class="flex justify-center items-center bg-[--sombra] w-28 h-28 rounded-3xl border-primary box-shadow-2xl mb-[8px]" tabindex="0">
+                    <p class="text-lg sm:text-xl font-medium text-cente">#1e40af</p>
+                  </div>
+                  <div class="flex justify-center items-center bg-[--tertiary] w-28 h-28 rounded-3xl border-primary box-shadow-2xl mb-[8px]" tabindex="0">
+                    <p class="text-lg sm:text-xl font-medium text-center">#002d6f</p>
+                  </div>
+                  <div class="flex justify-center items-center bg-[--bg] w-28 h-28 rounded-3xl border-primary box-shadow-2xl mb-[8px]" tabindex="0">
+                    <p class="text-lg sm:text-xl font-medium text-center">#00002d</p>
+                  </div>
+                  <div class="flex justify-center items-center bg-[--sombra-2] w-28 h-28 rounded-3xl border-primary box-shadow-2xl mb-[8px]" tabindex="0">
+                    <p class="text-lg sm:text-xl font-medium text-center">#808080</p>
+                  </div>
+                  <div class="flex justify-center items-center bg-[--secondary] w-28 h-28 rounded-3xl border-primary box-shadow-2xl mb-[8px]" tabindex="0">
+                    <p class="text-lg sm:text-xl text-[--bg] font-medium text-center">#fff</p>
+                  </div>
+                </div>
+                
+              </div>
+              
+            </div>
+  
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-11">
+          <h3 class="h3" data-aos="fade-up">Responsividade</h3>
+          <div id="imagem-container" class="frontend flex flex-col !justify-evenly items-center gap-14 bg-[--bg] border-primary box-shadow-xl rounded-3xl  overflow-x-hidden p-5 mx-5 relative" data-aos="fade-up">
+            <h4 class="h4 !text-3xl md:!text-[2.5rem] text-center">Página Principal</h4>
+  
+            <a id="projeto-imagem" onclick="abrirImagem('portfolio-mobile_principal')" class="flex justify-center bg-cover bg-top rounded-3xl w-full h-[300px] md:h-[500px] cursor-pointer hover:bg-bottom group" target="_blank" style="background-image: url(src/assets/images/Portfolio-Mobile.png); transition: 5s ease-in-out;" tabindex="0">
+              <span id="tooltip_imagem" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-4">Ver Imagem do Projeto</span>
+            </a>
+            
+          </div>
+          <div id="modal-imagem_portfolio-mobile_principal" onclick="clicarFora(event, 'portfolio-mobile_principal')" class="fixed top-0 left-0 hidden justify-center items-center bg-[--vanish] w-full h-full z-40">
+            <div class="relative flex flex-col items-center">
+              <div class="overflow-y-auto w-[350px] sm:w-[450px] md:w-[600px] lg:w-[800px] xl:w-[1200px] 2xl:w-[1500px] h-[800px] scrollbar-vanish rounded-3xl rounded-r-none">
+                <img src="src/assets/images/Portfolio-Mobile.png" alt="Imagem do Projeto" class="w-auto rounded-3xl">
+              </div>
+              <div class="flex justify-center group">
+                <a onclick="fecharImagem('portfolio-mobile_principal')" class="button-xm hover:bg-[--primary] absolute top-5 right-5 xl:right-8 cursor-pointer group">
+                  <span class="material-symbols-outlined !text-3xl !font-bold cursor-pointer group-hover:text-[--bg]">close</span>
+                </a>
+                <span id="tooltip-botao_fechar" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 top-7 right-[6.2rem]">Fechar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--
+    ██████   █████   ██████  ██ ███    ██  █████  ███████
+    ██   ██ ██   ██ ██       ██ ████   ██ ██   ██ ██
+    ██████  ███████ ██   ███ ██ ██ ██  ██ ███████ ███████
+    ██      ██   ██ ██    ██ ██ ██  ██ ██ ██   ██      ██
+    ██      ██   ██  ██████  ██ ██   ████ ██   ██ ███████
+    -->
+
+    <section id="paginas" class="relative flex flex-col justify-start items-center w-full">
+      <h2 class="h2 translate-y-[36px] sm:translate-y-[48px] md:translate-y-[60px] lg:translate-y-[72px] xl:translate-y-[78px]">Páginas</h2>
+
+      <div id="imagens-conteudo" class="flex flex-col justify-center items-center w-full py-28 sm:py-36 bg-[--tertiary] rounded-3xl overflow-hidden gap-7">
+        <h3 class="h3 mb-3" data-aos="fade-down">Página Principal</h3>
+
+        <div id="imagem-container" class="frontend flex flex-col !justify-evenly items-center gap-5 bg-[--bg] border-primary box-shadow-xl rounded-3xl xl:w-[1024px] overflow-x-hidden p-5 mx-5 relative" data-aos="fade-right">
+          <h4 class="h4 !text-3xl md:!text-[2.5rem] text-center mb-9">Início</h4>
+          <p class="text-lg sm:text-xl font-normal text-center">
+            Seção inicial do meu portfólio, que possui <b>meu nome</b>, a <b>área que atuo</b> como desenvolvedor, links das minhas <b>redes profissionais</b> para contato e um indicador de rolagem.
+          </p>
+
+          <a id="projeto-imagem" onclick="abrirImagem('portfolio-inicio')" class="flex justify-center bg-cover bg-top rounded-3xl w-full h-[300px] md:h-[500px] cursor-pointer hover:bg-bottom group" target="_blank" style="background-image: url(src/assets/images/Portfolio_Inicio.png); transition: 5s cubic-bezier(.67, .17, 0, .94);" tabindex="0">
+            <span id="tooltip_imagem" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-4">Ver Imagem do Projeto</span>
+          </a>
+          
+        </div>
+        <div id="modal-imagem_portfolio-inicio" onclick="clicarFora(event, 'portfolio-inicio')" class="fixed top-0 left-0 hidden justify-center items-center bg-[--vanish] w-full h-full z-40">
+          <div class="relative flex flex-col items-center">
+            <div class="overflow-y-auto w-[350px] sm:w-[450px] md:w-[600px] lg:w-[800px] xl:w-[1200px] 2xl:w-[1500px] h-[800px] scrollbar-vanish rounded-3xl rounded-r-none">
+              <img src="src/assets/images/Portfolio_Inicio.png" alt="Imagem do Projeto" class="w-auto rounded-3xl">
+            </div>
+            <div class="flex justify-center group">
+              <a onclick="fecharImagem('portfolio-inicio')" class="button-xm hover:bg-[--primary] absolute top-5 right-5 xl:right-8 cursor-pointer group">
+                <span class="material-symbols-outlined !text-3xl !font-bold cursor-pointer group-hover:text-[--bg]">close</span>
+              </a>
+              <span id="tooltip-botao_fechar" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 top-7 right-[6.2rem]">Fechar</span>
+            </div>
+          </div>
+        </div>
+          
+        <div id="imagem-container" class="frontend flex flex-col !justify-evenly items-center gap-5 bg-[--bg] border-primary box-shadow-xl rounded-3xl xl:w-[1024px] overflow-x-hidden p-5 mx-5 relative" data-aos="fade-left">
+          <h4 class="h4 !text-3xl md:!text-[2.5rem] text-center mb-9">Sobre Mim</h4>
+          <p class="text-lg sm:text-xl font-normal text-center">
+            Seção onde apresento meu <b>perfil com foto</b>, <b>formação</b> em Análise e Desenvolvimento de Sistemas na UNINASSAU, <b>cursos</b> complementares, e minhas <b>experiências</b> no mercado de trabalho.
+          </p>
+
+          <a id="projeto-imagem" onclick="abrirImagem('portfolio-sobre')" class="flex justify-center bg-cover bg-top rounded-3xl w-full h-[300px] md:h-[500px] cursor-pointer hover:bg-bottom group" target="_blank" style="background-image: url(src/assets/images/Portfolio_Sobre.png); transition: 5s cubic-bezier(.67, .17, 0, .94);" tabindex="0">
+            <span id="tooltip_imagem" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-4">Ver Imagem do Projeto</span>
+          </a>
+          
+        </div>
+        <div id="modal-imagem_portfolio-sobre" onclick="clicarFora(event, 'portfolio-sobre')" class="fixed top-0 left-0 hidden justify-center items-center bg-[--vanish] w-full h-full z-40">
+          <div class="relative flex flex-col items-center">
+            <div class="overflow-y-auto w-[350px] sm:w-[450px] md:w-[600px] lg:w-[800px] xl:w-[1200px] 2xl:w-[1500px] h-[800px] scrollbar-vanish rounded-3xl rounded-r-none">
+              <img src="src/assets/images/Portfolio_Sobre.png" alt="Imagem do Projeto" class="w-auto rounded-3xl">
+            </div>
+            <div class="flex justify-center group">
+              <a onclick="fecharImagem('portfolio-sobre')" class="button-xm hover:bg-[--primary] absolute top-5 right-5 xl:right-8 cursor-pointer group">
+                <span class="material-symbols-outlined !text-3xl !font-bold cursor-pointer group-hover:text-[--bg]">close</span>
+              </a>
+              <span id="tooltip-botao_fechar" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 top-7 right-[6.2rem]">Fechar</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="imagem-container" class="frontend flex flex-col !justify-evenly items-center gap-5 bg-[--bg] border-primary box-shadow-xl rounded-3xl xl:w-[1024px] overflow-x-hidden p-5 mx-5 relative" data-aos="fade-right">
+          <h4 class="h4 !text-3xl md:!text-[2.5rem] text-center mb-9">Tecnologias</h4>
+          <p class="text-lg sm:text-xl font-normal text-center">
+            Seção onde exibo as  <b>tecnologias</b> que conheço e uso no desenvolvimento dos meus projetos, com <b>filtros para categorizá-las</b> por tipo.
+          </p>
+
+          <a id="projeto-imagem" onclick="abrirImagem('portfolio-tecno')" class="flex justify-center bg-cover bg-top rounded-3xl w-full h-[300px] md:h-[500px] cursor-pointer hover:bg-bottom group" target="_blank" style="background-image: url(src/assets/images/Portfolio_Tecno.png); transition: 5s cubic-bezier(.67, .17, 0, .94);" tabindex="0">
+            <span id="tooltip_imagem" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-4">Ver Imagem do Projeto</span>
+          </a>
+          
+        </div>
+        <div id="modal-imagem_portfolio-tecno" onclick="clicarFora(event, 'portfolio-tecno')" class="fixed top-0 left-0 hidden justify-center items-center bg-[--vanish] w-full h-full z-40">
+          <div class="relative flex flex-col items-center">
+            <div class="overflow-y-auto w-[350px] sm:w-[450px] md:w-[600px] lg:w-[800px] xl:w-[1200px] 2xl:w-[1500px] h-[800px] scrollbar-vanish rounded-3xl rounded-r-none">
+              <img src="src/assets/images/Portfolio_Tecno.png" alt="Imagem do Projeto" class="w-auto rounded-3xl">
+            </div>
+            <div class="flex justify-center group">
+              <a onclick="fecharImagem('portfolio-tecno')" class="button-xm hover:bg-[--primary] absolute top-5 right-5 xl:right-8 cursor-pointer group">
+                <span class="material-symbols-outlined !text-3xl !font-bold cursor-pointer group-hover:text-[--bg]">close</span>
+              </a>
+              <span id="tooltip-botao_fechar" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 top-7 right-[6.2rem]">Fechar</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="imagem-container" class="frontend flex flex-col !justify-evenly items-center gap-5 bg-[--bg] border-primary box-shadow-xl rounded-3xl xl:w-[1024px] overflow-x-hidden p-5 mx-5 relative" data-aos="fade-left">
+          <h4 class="h4 !text-3xl md:!text-[2.5rem] text-center mb-9">Projetos</h4>
+          <p class="text-lg sm:text-xl font-normal text-center">
+            Seção onde apresento meu <b>portfólio de projetos</b>, incluindo os de front-end, back-end e full-stack que destacam as <b>tecnologias usadas</b> no processo de desenvolvimento, com <b>filtros para categorizá-los</b> por tipo.
+          </p>
+
+          <a id="projeto-imagem" onclick="abrirImagem('portfolio-projetos')" class="flex justify-center bg-cover bg-top rounded-3xl w-full h-[300px] md:h-[500px] cursor-pointer hover:bg-bottom group" target="_blank" style="background-image: url(src/assets/images/Portfolio_Projetos.png); transition: 5s cubic-bezier(.67, .17, 0, .94);" tabindex="0">
+            <span id="tooltip_imagem" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-4">Ver Imagem do Projeto</span>
+          </a>
+          
+        </div>
+        <div id="modal-imagem_portfolio-projetos" onclick="clicarFora(event, 'portfolio-projetos')" class="fixed top-0 left-0 hidden justify-center items-center bg-[--vanish] w-full h-full z-40">
+          <div class="relative flex flex-col items-center">
+            <div class="overflow-y-auto w-[350px] sm:w-[450px] md:w-[600px] lg:w-[800px] xl:w-[1200px] 2xl:w-[1500px] h-[800px] scrollbar-vanish rounded-3xl rounded-r-none">
+              <img src="src/assets/images/Portfolio_Projetos.png" alt="Imagem do Projeto" class="w-auto rounded-3xl">
+            </div>
+            <div class="flex justify-center group">
+              <a onclick="fecharImagem('portfolio-projetos')" class="button-xm hover:bg-[--primary] absolute top-5 right-5 xl:right-8 cursor-pointer group">
+                <span class="material-symbols-outlined !text-3xl !font-bold cursor-pointer group-hover:text-[--bg]">close</span>
+              </a>
+              <span id="tooltip-botao_fechar" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 top-7 right-[6.2rem]">Fechar</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="imagem-container" class="frontend flex flex-col !justify-evenly items-center gap-5 bg-[--bg] border-primary box-shadow-xl rounded-3xl xl:w-[1024px] overflow-x-hidden p-5 mx-5 relative" data-aos="fade-right">
+          <h4 class="h4 !text-3xl md:!text-[2.5rem] text-center mb-9">Contato</h4>
+          <p class="text-lg sm:text-xl font-normal text-center">
+            Seção que contém o <b>formulário de contato</b> e links das minhas <b>redes profissionais</b>.
+          </p>
+
+          <a id="projeto-imagem" onclick="abrirImagem('portfolio-contato')" class="flex justify-center bg-cover bg-top rounded-3xl w-full h-[300px] md:h-[500px] cursor-pointer hover:bg-bottom group" target="_blank" style="background-image: url(src/assets/images/Portfolio_Contato.png); transition: 5s cubic-bezier(.67, .17, 0, .94);" tabindex="0">
+            <span id="tooltip_imagem" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-4">Ver Imagem do Projeto</span>
+          </a>
+          
+        </div>
+        <div id="modal-imagem_portfolio-contato" onclick="clicarFora(event, 'portfolio-contato')" class="fixed top-0 left-0 hidden justify-center items-center bg-[--vanish] w-full h-full z-40">
+          <div class="relative flex flex-col items-center">
+            <div class="overflow-y-auto w-[350px] sm:w-[450px] md:w-[600px] lg:w-[800px] xl:w-[1200px] 2xl:w-[1500px] h-[800px] scrollbar-vanish rounded-3xl rounded-r-none">
+              <img src="src/assets/images/Portfolio_Contato.png" alt="Imagem do Projeto" class="w-auto rounded-3xl">
+            </div>
+            <div class="flex justify-center group">
+              <a onclick="fecharImagem('portfolio-contato')" class="button-xm hover:bg-[--primary] absolute top-5 right-5 xl:right-8 cursor-pointer group">
+                <span class="material-symbols-outlined !text-3xl !font-bold cursor-pointer group-hover:text-[--bg]">close</span>
+              </a>
+              <span id="tooltip-botao_fechar" class="pointer-events-none hidden xl:group-hover:flex text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 top-7 right-[6.2rem]">Fechar</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="projeto-botoes" class="flex flex-row justify-center items-center gap-5 mt-1 relative bg-[--bg] border-primary box-shadow-xl pt-10 pb-12 px-10 rounded-3xl" data-aos="fade-up">
+          <div class="flex flex-col justify-center items-center group">
+            <a href="https://samysilvadesousa.github.io/" class="button-lg" target="_blank" title="Ver Projeto"><span class="material-symbols-outlined !text-[2.5rem] cursor-pointer">visibility</span></a>
+            <span id="tooltip-botao_projeto" class="pointer-events-none hidden xl:group-hover:flex xl:group-focus:flex group-hover:hidden group-focus:hidden text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-[8.4rem]">Abrir Projeto</span>
+          </div>
+          <div class="flex flex-col justify-center items-center group">
+            <a href="https://github.com/SamySilvaDeSousa/Portfolio" class="button-lg" target="_blank" title="Ver Repositório"><span class="material-symbols-outlined !text-[2.5rem] cursor-pointer">code</span></a>
+            <span id="tooltip-botao_projeto" class="pointer-events-none hidden xl:group-hover:flex xl:group-focus:flex group-hover:hidden group-focus:hidden text-xl text-[--secondary] text-center text-nowrap bg-[--bg] border-primary box-shadow-md rounded-3xl py-1 px-5 absolute z-10 bottom-[8.4rem]">Ver Repositório</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!--
+  ███████  ██████   ██████  ████████ ███████ ██████  
+  ██      ██    ██ ██    ██    ██    ██      ██   ██ 
+  █████   ██    ██ ██    ██    ██    █████   ██████  
+  ██      ██    ██ ██    ██    ██    ██      ██   ██ 
+  ██       ██████   ██████     ██    ███████ ██   ██ 
+  -->
+
+  <footer class="flex flex-col justify-center items-center">
+    <button id="logo-footer" class="sm:text-8xl text-7xl text-[--secondary] uppercase text-shadow-lg-sombra2_click font-[Righteous] not-italic mt-5 mb-[1.75rem] transition-none">Samy</button>
+    <p id="creditos-footer" class="text-[--secondary] text-lg sm:text-xl text-center bg-[--bg] pb-[6.5rem] pt-0 px-10 rounded-3xl rounded-b-none w-full">
+      2024 &copy; Desenvolvido por Samy Silva de Sousa
+    </p>
+  </footer>
+
+  <!--
+  ███████  ██████ ██████  ██ ██████  ████████ 
+  ██      ██      ██   ██ ██ ██   ██    ██    
+  ███████ ██      ██████  ██ ██████     ██    
+       ██ ██      ██   ██ ██ ██         ██    
+  ███████  ██████ ██   ██ ██ ██         ██   
+  -->
+
+  <script src="src/js/global/buzina.js"></script>
+  <script src="src/js/global/card.js"></script>
+  <script src="src/js/global/glare.js"></script>
+  <script src="src/js/global/imagemProjetos.js"></script>
+  <script src="src/js/global/navbar.js"></script>
+  <script src="src/js/global/rightButton.js"></script>
+  <script src="src/js/global/titleBlock.js"></script>
+
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".tecno"), {
+      max: 10,
+      speed: 400
+    });
+    ['card'].forEach(className => {
+      VanillaTilt.init(document.querySelectorAll("." + className), {
+      max: 20,
+      speed: 400
+      });
+    });
+  </script>
+
+  <!--ÍCONES-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!--ÍCONES-->
+
+  <!--ANIMAÇÕES-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <script> AOS.init({ duration: 1000 }); </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!--ANIMAÇÕES-->
+  
+  <noscript>
+    <div class="noscript">
+      <div class="noscript-container">
+        <h3 class="h3" style="transform: translateY(80px)">Ative o JavaScript!</h3>
+        <img src="src/assets/images/Noscript.gif">
+      </div>
+    </div>
+  </noscript>
+
+</body>
+
+</html>

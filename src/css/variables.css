@@ -1,0 +1,11 @@
+:root {
+  --primary: #00aaff;
+  --secondary: #fff;
+  --tertiary: #002d6f;
+  --bg: #00002d;
+  --sombra: #1e40af;
+  --sombra-2: #808080;
+
+  --tertiary-vanish: rgba(0, 45, 111, 0);
+  --vanish: rgba(0,0,0,0.7);
+}

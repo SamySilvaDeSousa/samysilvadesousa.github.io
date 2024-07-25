@@ -1,0 +1,155 @@
+.hover-temporary.active {
+  color: var(--bg) !important;
+  background-color: var(--primary) !important;
+}
+@media (min-width: 1280px) {
+  .hover-temporary.active {
+    color: var(--primary) !important;
+  }
+}
+
+.border-primary {
+  border: 3px solid var(--primary);
+}
+.border-bg {
+  border: 3px solid var(--bg);
+}
+
+#foto:focus,
+#sobre .card:focus {
+  outline: 4px dashed var(--secondary) !important;
+  outline-offset: 8px !important;
+  transition: 100ms;
+}
+@media (min-width: 640px) {
+  #tecnologias .card:focus,
+  #tecnologias .card-embreve:focus,
+  #descricao .card:focus,
+  #projeto-imagem:focus {
+    outline: 4px dashed var(--secondary) !important;
+    outline-offset: 8px !important;
+  }
+}
+@media (max-width: 640px) {
+  #tecnologias .card-embreve:focus {
+    outline: 4px dashed var(--secondary) !important;
+    outline-offset: 8px !important;
+  }
+}
+
+.ativo {
+  color: var(--primary) !important;
+
+  &:hover {
+    color: var(--bg) !important;
+  }
+}
+
+
+/*
+██ ███    ██ ██  ██████ ██  ██████  
+██ ████   ██ ██ ██      ██ ██    ██ 
+██ ██ ██  ██ ██ ██      ██ ██    ██ 
+██ ██  ██ ██ ██ ██      ██ ██    ██ 
+██ ██   ████ ██  ██████ ██  ██████  
+*/
+
+
+#alert.show {
+  transform: translateY(-85px);
+}
+@media (min-width: 1280px) {
+  #alert.show {
+    transform: translateY(0px);
+  }
+  #inicio-botoes button:hover > span {
+    color: var(--bg) !important;
+  }
+}
+
+/*
+███████  ██████  ██████  ██████  ███████ 
+██      ██    ██ ██   ██ ██   ██ ██      
+███████ ██    ██ ██████  ██████  █████   
+     ██ ██    ██ ██   ██ ██   ██ ██      
+███████  ██████  ██████  ██   ██ ███████ 
+*/
+
+.bg-photo {
+  background-image: url(../../../src/assets/images/foto.jpg);
+  background-size: 250%;
+  background-position: 33% 30%;
+}
+strong {
+  color: var(--secundary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+.time {
+  color: var(--primary);
+  font-family: 'Righteous', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-shadow: 0px 3px 0px var(--sombra);
+}
+
+/*
+██████  ██████   ██████       ██ ███████ ████████  ██████  ███████ 
+██   ██ ██   ██ ██    ██      ██ ██         ██    ██    ██ ██      
+██████  ██████  ██    ██      ██ █████      ██    ██    ██ ███████ 
+██      ██   ██ ██    ██ ██   ██ ██         ██    ██    ██      ██ 
+██      ██   ██  ██████   █████  ███████    ██     ██████  ███████ 
+*/
+
+#projetos-super-container::-webkit-scrollbar-track {
+  margin: 0px 10px;
+  background-color: var(--tertiary);
+}
+#projeto-tecnologias::-webkit-scrollbar {
+  display: none;
+}
+
+/*
+ ██████  ██████  ███    ██ ████████  █████  ████████  ██████ 
+██      ██    ██ ████   ██    ██    ██   ██    ██    ██    ██
+██      ██    ██ ██ ██  ██    ██    ███████    ██    ██    ██
+██      ██    ██ ██  ██ ██    ██    ██   ██    ██    ██    ██
+ ██████  ██████  ██   ████    ██    ██   ██    ██     ██████ 
+*/
+
+.width-80-percent {
+  width: min(80%, 600px);
+}
+#mensagem {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#input-item_mensagem:after {
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  box-shadow: inset 0 -40px 50px -10px var(--tertiary) !important;
+  border-radius: 24px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+@media (min-width: 1024px) {
+  #mensagem {
+    &::-webkit-scrollbar-track {
+      background-color: var(--tertiary);
+      border-radius: 100%;
+      margin: 5px 0px !important;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--tertiary);
+      cursor: default;
+    }
+  }
+}

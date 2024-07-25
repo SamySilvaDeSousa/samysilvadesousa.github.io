@@ -1,0 +1,53 @@
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  text-decoration: none;
+  cursor: default;
+  user-select: none;
+  transition: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+*::selection {
+  color: var(--primary);
+  background-color: var(--bg);
+}
+.noscript {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--tertiary);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1000;
+
+  .noscript-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    border-radius: 24px;
+    border: 3px solid var(--primary);
+    box-shadow: 0 8px 0px var(--sombra);
+    width: 80%;
+    height: 80%;
+
+    h3 {
+      z-index: 51;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .noscript-container img {
+    width: 100%;
+  }
+}

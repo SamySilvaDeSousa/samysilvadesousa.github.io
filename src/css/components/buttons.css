@@ -1,0 +1,67 @@
+.button-xm,
+.button-sm,
+.button-lg {
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  background-color: var(--bg);
+  border: 3px solid var(--primary);
+  border-radius: 24px;
+  cursor: pointer;
+  box-shadow: 0 7px 0px var(--sombra);
+  transition: none;
+}
+.button-xm {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.button-sm {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+.button-lg {
+  width: 4rem;
+  height: 4rem;
+}
+@media (min-width: 640px) {
+  .button-lg {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+.button-sm:hover,
+.button-sm:focus,
+.button-lg:focus {
+  color: var(--bg);
+  background-color: var(--primary);
+  font-weight: 600;
+}
+@media (min-width: 1024px) {
+  .button-lg:hover {
+    color: var(--bg);
+    background-color: var(--primary);
+    font-weight: 600;
+  }
+}
+
+.button-xm:active,
+.button-sm:active,
+.button-lg:active {
+  transform: translateY(3.5px);
+  box-shadow: 0px 3.5px 0px var(--sombra);
+}
+
+@media (min-width: 640px) {
+  .button-xm,
+  .button-sm,
+  .button-lg {
+    box-shadow: 0 8px 0px var(--sombra) !important;
+    &:active {
+      transform: translateY(4px) !important;
+      box-shadow: 0px 4px 0px var(--sombra) !important;
+    }
+  }
+}

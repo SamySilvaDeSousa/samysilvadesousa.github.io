@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg);
+  margin: 10px 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg);
+  border: 3px solid var(--primary);
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  border-color: var(--secundary);
+}
+
+#projetos-super-container::-webkit-scrollbar-track {
+  margin: 0px 25px;
+}
+.scrollbar-vanish::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .scrollbar-vanish::-webkit-scrollbar {
+    display: block !important;
+  }
+  .scrollbar-vanish::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin: 25px 0px;
+  }
+}
