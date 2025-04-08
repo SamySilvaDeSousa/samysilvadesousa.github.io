@@ -5,7 +5,7 @@ h1, h2, h3, h4 ,h5 ,h6 {
   color: var(--text);
   font-family: "Bricolage Grotesque", serif;
 }
-p, span, a, li, ul, label, input, textarea, [type="submit"], ::placeholder {
+p, span, a, li, ul, label, input, textarea, [type="submit"], ::placeholder, .nav__link {
   color: var(--text);
   font-family: "Comfortaa", sans-serif;
   font-weight: 300;
