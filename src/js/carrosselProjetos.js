@@ -33,7 +33,7 @@ function criarCarrossel({ seletorContainer, seletorImagem, pastaImagens, nomesIm
 
   function iniciarAutoPlay() {
     clearTimeout(intervaloAutoPlay);
-    intervaloAutoPlay = setTimeout(proximaImagem, 5000);
+    intervaloAutoPlay = setTimeout(proximaImagem, 8000);
   }
 
   function pausarAutoPlay() {
