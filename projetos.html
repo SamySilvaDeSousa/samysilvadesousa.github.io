@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Samy Silva de Sousa">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:image" content="">
+  <title>Portfólio</title>
+  <link rel="icon" href="" type="image/x-icon"> <!--FAVICON-->
+
+  <script src="https://cdn.tailwindcss.com"></script> <!--TAILWIND CDN-->
+  <link rel="stylesheet" href="../src/css/main.css"> <!--CSS-->
+
+  <!--ÍCONES-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!--ÍCONES-->
+
+</head>
+
+<body class="flex flex-col justify-center items-center relative bg-[--bg] overflow-x-hidden">
+
+  <div id="refresh-animation" class="absolute w-full h-full bg-[--highlight] z-50 refresh"></div>
+  <button id="voltarAoTopo" class="btn"><img src="src/assets/images/Seta.svg" alt="Voltar para o Topo"></button>
+  <button id="menu__button" class="btn !w-[56px] !h-[56px]"><img id="menu__img" src="src/assets/images/Menu.svg" alt="Abrir o Menu"></button>
+
+  <img src="src/assets/images/Light.png" alt="Light" class="animate-pulse fixed -top-[265px] -translate-x-[1100px] z-[-10]">
+  <img src="src/assets/images/Light.png" alt="Light" class="animate-pulse fixed -top-[265px] translate-x-[1100px] z-[-10]">
+
+  <header class="flex flex-col justify-center items-center w-full relative">
+
+    <nav id="menu">
+      <a href="index.html" class="nav__link hover-effect">Início</a>
+      <a href="servicos.html" class="nav__link hover-effect">Serviços</a>
+      <a href="projetos.html" class="nav__link hover-effect">Projetos</a>
+      <a href="perfil.html" class="nav__link hover-effect">Perfil</a>
+      <a href="contato.html" class="nav__link hover-effect">Contato</a>
+
+      <div class="flex gap-5 mt-10" role="navigation" aria-label="Redes sociais">
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/samysilvadesousa/" aria-label="Abrir meu perfil no LinkedIn">
+          <img src="src/assets/images/LinkedIn-Link_white.svg" alt="Meu LinkedIn" class="w-6 h-6">
+        </a>
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://github.com/SamySilvaDeSousa" aria-label="Abrir meu perfil no GitHub">
+          <img src="src/assets/images/GitHub-Link_white.svg" alt="Meu GitHub" class="w-6 h-6">
+        </a>
+      </div>
+    </nav>
+
+  </header>
+  
+  <main class="flex flex-col justify-center items-center gap-[200px] relative w-full">
+
+    <section id="projects" class="flex flex-col justify-center items-center gap-20 w-full relative mt-[200px]">
+
+      <div class="flex flex-col justify-center items-center w-full mb-[120px]">
+        <h1 class="mb-2">Meus projetos</h1>
+        <p>Veja alguns projetos que já fiz</p>
+      </div>
+      <div id="projects__container" class="grid grid-cols-2 max-xl:grid-cols-1 flex-wrap justify-between items-center !gap-y-20 xl:gap-10 max-w-[1280px] max-md:px-5">
+        
+        <!--Projetos-->
+        <a href="projetos/dyndyn.html" class="flex flex-col items-start max-xl:items-center gap-5 cursor-pointer group w-full max-xl:w-[600px] max-md:w-full rounded-[40px]">
+          <div class="flex flex-col justify-center items-center bg-[--bg-blue] group-hover:bg-[--highlight] delay-75 rounded-[40px] border-secondary outline-primary overflow-hidden relative">
+            <img src="src/assets/images/DynDyn.png" alt="Projeto DynDyn" class="w-full h-full rounded-[30px] cursor-pointer group-hover:scale-[1.1] group-hover:blur-sm group-hover:opacity-60 transition-all duration-300">
+            <!--Ver projeto-->
+            <div class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300 -rotate-45 group-hover:rotate-0 scale-150 group-hover:scale-100 bg-[--hover] rounded-full p-4 border-tertiary outline-secondary" style="box-shadow: 0px 0px 16px var(--hover);">
+              <svg class="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path id="topTextPath" d="M 10,50 A 40,40 0 1,1 90,50" fill="transparent"/>
+                <path id="bottomTextPath" d="M 90,50 A 40,40 0 1,1 10,50" fill="transparent" />
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#topTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#bottomTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+              </svg>
+              <img src="src/assets/images/Seta.svg" alt="" class="w-12 absolute top-10 right-10">
+            </div>
+          </div>
+          <div class="flex flex-col max-xl:items-center gap-2 xl:ml-8">
+            <h3 class="cursor-pointer">DynDyn</h3>
+            <p class="text-center xl:opacity-0 xl:group-hover:opacity-100 xl:group-focus:opacity-100 transition-all duration-300 cursor-pointer">Sistema de gestão financeira <span class="opacity-30"> ┃ </span> 2024</p>
+          </div>
+        </a>
+        
+        <a href="projetos/trindade-advocacia.html" class="flex flex-col items-start max-xl:items-center gap-5 cursor-pointer group w-full max-xl:w-[600px] max-md:w-full rounded-[40px]">
+          <div class="flex flex-col justify-center items-center bg-[--bg-blue] group-hover:bg-[--highlight] delay-75 rounded-[40px] border-secondary outline-primary overflow-hidden relative">
+            <img src="src/assets/images/Trindade_Advocacia.png" alt="Projeto Trindade Advocacia" class="w-full h-full rounded-[30px] cursor-pointer group-hover:scale-[1.1] group-hover:blur-sm group-hover:opacity-60 transition-all duration-300">
+            <!--Ver projeto-->
+            <div class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300 -rotate-45 group-hover:rotate-0 scale-150 group-hover:scale-100 bg-[--hover] rounded-full p-4 border-tertiary outline-secondary" style="box-shadow: 0px 0px 16px var(--hover);">
+              <svg class="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path id="topTextPath" d="M 10,50 A 40,40 0 1,1 90,50" fill="transparent"/>
+                <path id="bottomTextPath" d="M 90,50 A 40,40 0 1,1 10,50" fill="transparent" />
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#topTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#bottomTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+              </svg>
+              <img src="src/assets/images/Seta.svg" alt="" class="w-12 absolute top-10 right-10">
+            </div>
+          </div>
+          <div class="flex flex-col max-xl:items-center gap-2 xl:ml-8">
+            <h3 class="cursor-pointer">Trindade Advocacia</h3>
+            <p class="text-center xl:opacity-0 xl:group-hover:opacity-100 xl:group-focus:opacity-100 transition-all duration-300 cursor-pointer">Site institucional para advogados <span class="opacity-30"> ┃ </span> 2024</p>
+          </div>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer data-aos="fade-in" class="flex flex-col justify-center items-center w-full xl:w-[1280px] gap-4 px-5 mb-5 pt-60 relative">
+
+    <div id="cta__container" class="flex flex-col justify-center items-center gap-5 text-center bg-gradient2 w-full xl:w-[1280px] border-secondary outline-primary rounded-[40px] py-10">
+
+      <h2>Entre agora em <br> contato comigo!</h2>
+      <a href="contato.html" class="btn w-max mt-3">Contato</a>
+
+    </div>
+
+  </footer>
+
+    <!--
+  ███████  ██████ ██████  ██ ██████  ████████ 
+  ██      ██      ██   ██ ██ ██   ██    ██    
+  ███████ ██      ██████  ██ ██████     ██    
+       ██ ██      ██   ██ ██ ██         ██    
+  ███████  ██████ ██   ██ ██ ██         ██   
+  -->
+
+  <script src="src/js/voltarAoTopo.js"></script>
+  <script src="src/js/menu.js"></script>
+
+  <!--ANIMAÇÕES-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script> AOS.init({ duration: 1000 }); </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!--ANIMAÇÕES-->
+
+</body>
+
+</html>

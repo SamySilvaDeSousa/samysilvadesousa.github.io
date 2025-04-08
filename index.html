@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Samy Silva de Sousa">
+  <meta name="description" content="Portfólio de Desenvolvedor Web - Samy Silva de Sousa">
+  <meta name="keywords" content="HTML, CSS, JavaScript, TailwindCSS, Samy Silva, Samy Silva de Sousa, Portfolio, FrontEnd, BackEnd, Front, Back, End, Programador, Web, Desenvolvedor, Web Design, Web Designer">
+  <meta property="og:image" content="">
+  <title>Portfólio</title>
+  <link rel="icon" href="" type="image/x-icon"> <!--FAVICON-->
+
+  <script src="https://cdn.tailwindcss.com"></script> <!--TAILWIND CDN-->
+  <link rel="stylesheet" href="../src/css/main.css"> <!--CSS-->
+
+  <!--ÍCONES-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!--ÍCONES-->
+
+</head>
+
+<body class="flex flex-col justify-center items-center relative bg-[--bg] overflow-x-hidden">
+
+  <div id="refresh-animation" class="absolute w-full h-full bg-[--highlight] z-50 refresh"></div>
+  <button id="voltarAoTopo" class="btn"><img src="src/assets/images/Seta.svg" alt="Voltar para o Topo"></button>
+  <button id="menu__button" class="btn !w-[56px] !h-[56px]"><img id="menu__img" src="src/assets/images/Menu.svg" alt="Abrir o Menu"></button>
+
+  <img src="src/assets/images/Light.png" alt="Light" class="animate-pulse fixed -top-[265px] -translate-x-[1100px] z-[-10]">
+  <img src="src/assets/images/Light.png" alt="Light" class="animate-pulse fixed -top-[265px] translate-x-[1100px] z-[-10]">
+
+  <header class="flex flex-col justify-center items-center w-full h-dvh relative">
+
+    <nav id="menu">
+      <a href="index.html" class="nav__link hover-effect">Início</a>
+      <a href="servicos.html" class="nav__link hover-effect">Serviços</a>
+      <a href="projetos.html" class="nav__link hover-effect">Projetos</a>
+      <a href="perfil.html" class="nav__link hover-effect">Perfil</a>
+      <a href="contato.html" class="nav__link hover-effect">Contato</a>
+
+      <div class="flex gap-5 mt-10" role="navigation" aria-label="Redes sociais">
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/samysilvadesousa/" aria-label="Abrir meu perfil no LinkedIn">
+          <img src="src/assets/images/LinkedIn-Link_white.svg" alt="Meu LinkedIn" class="w-6 h-6">
+        </a>
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://github.com/SamySilvaDeSousa" aria-label="Abrir meu perfil no GitHub">
+          <img src="src/assets/images/GitHub-Link_white.svg" alt="Meu GitHub" class="w-6 h-6">
+        </a>
+      </div>
+    </nav>
+    
+    <section id="hero" class="flex flex-col justify-center items-center gap-2.5 w-full">
+
+      <h5>Olá, me chamo Samy!</h5>
+      <h1 class="max-w-[600px]">Desenvolvendo ideias usando tecnologia</h1>
+      <div class="flex gap-5 mt-10" role="navigation" aria-label="Redes sociais">
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/samysilvadesousa/" aria-label="Abrir meu perfil no LinkedIn">
+          <img src="src/assets/images/LinkedIn-Link_white.svg" alt="Meu LinkedIn" class="w-6 h-6">
+        </a>
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://github.com/SamySilvaDeSousa" aria-label="Abrir meu perfil no GitHub">
+          <img src="src/assets/images/GitHub-Link_white.svg" alt="Meu GitHub" class="w-6 h-6">
+        </a>
+      </div>
+
+    </section>
+    <img src="src/assets/images/Scroll.svg" alt="Scroll" class="floating bottom-20 absolute w-5">
+
+  </header>
+  
+  <main class="flex flex-col justify-center items-center gap-[200px] mt-[120px] relative w-full">
+
+    <section data-aos="fade-up" id="services" class="flex flex-col justify-center items-center gap-20 w-full relative">
+
+      <h2>Meus serviços</h2>
+      <div id="services__container" class="grid grid-cols-1 lg:grid-cols-2 justify-center items-start gap-10 max-sm:px-5">
+
+        <!--Serviços-->
+        <div class="flex flex-col justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 w-[450px] max-sm:w-full h-full" tabindex="0">
+          <div class="flex flex-col gap-5 w-full">
+            <h3>Web design</h3>
+            <p>Criando designs modernos, intuitivos e responsivos que transformam ideias em interfaces incríveis!</p>
+          </div>
+          <img src="src/assets/images/Design.svg" alt="" class="w-32 h-32 max-sm:w-20 max-sm:h-20 mt-auto">
+        </div>
+
+        <div class="flex flex-col justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 w-[450px] max-sm:w-full h-full" tabindex="0">
+          <div class="flex flex-col gap-5 w-full">
+            <h3>Desenvolvimento <br> front-end</h3>
+            <p>Desenvolvendo sites e sistemas web personalizados, escaláveis e eficientes para otimizar processos e impulsionar negócios!</p>
+          </div>
+          <img src="src/assets/images/Dev.svg" alt="" class="w-36 h-36 max-sm:w-24 max-sm:h-24  mt-auto">
+        </div>
+        
+      </div>
+      <a href="servicos.html" class="btn">Saiba mais</a>
+      
+    </section>
+    
+    <section data-aos="fade-up" id="projects" class="flex flex-col justify-center items-center gap-20 w-full relative">
+
+      <h2>Meus projetos</h2>
+      <div id="projects__container" class="grid grid-cols-2 max-xl:grid-cols-1 flex-wrap justify-between items-center !gap-y-20 xl:gap-10 max-w-[1280px] max-md:px-5">
+        
+        <!--Projetos-->
+        <a href="projetos/dyndyn.html" class="flex flex-col items-start max-xl:items-center gap-5 cursor-pointer group w-full max-xl:w-[600px] max-md:w-full rounded-[40px]">
+          <div class="flex flex-col justify-center items-center bg-[--bg-blue] group-hover:bg-[--highlight] delay-75 rounded-[40px] border-secondary outline-primary overflow-hidden relative">
+            <img src="src/assets/images/DynDyn.png" alt="Projeto DynDyn" class="w-full h-full rounded-[30px] cursor-pointer group-hover:scale-[1.1] group-hover:blur-sm group-hover:opacity-60 transition-all duration-300">
+            <!--Ver projeto-->
+            <div class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300 -rotate-45 group-hover:rotate-0 scale-150 group-hover:scale-100 bg-[--hover] rounded-full p-4 border-tertiary outline-secondary" style="box-shadow: 0px 0px 16px var(--hover);">
+              <svg class="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path id="topTextPath" d="M 10,50 A 40,40 0 1,1 90,50" fill="transparent"/>
+                <path id="bottomTextPath" d="M 90,50 A 40,40 0 1,1 10,50" fill="transparent" />
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#topTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#bottomTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+              </svg>
+              <img src="src/assets/images/Seta.svg" alt="" class="w-12 absolute top-10 right-10">
+            </div>
+          </div>
+          <div class="flex flex-col max-xl:items-center gap-2 xl:ml-8">
+            <h3 class="cursor-pointer">DynDyn</h3>
+            <p class="text-center xl:opacity-0 xl:group-hover:opacity-100 xl:group-focus:opacity-100 transition-all duration-300 cursor-pointer">Sistema de gestão financeira <span class="opacity-30"> ┃ </span> 2024</p>
+          </div>
+        </a>
+        
+        <a href="projetos/trindade-advocacia.html" class="flex flex-col items-start max-xl:items-center gap-5 cursor-pointer group w-full max-xl:w-[600px] max-md:w-full rounded-[40px]">
+          <div class="flex flex-col justify-center items-center bg-[--bg-blue] group-hover:bg-[--highlight] delay-75 rounded-[40px] border-secondary outline-primary overflow-hidden relative">
+            <img src="src/assets/images/Trindade_Advocacia.png" alt="Projeto Trindade Advocacia" class="w-full h-full rounded-[30px] cursor-pointer group-hover:scale-[1.1] group-hover:blur-sm group-hover:opacity-60 transition-all duration-300">
+            <!--Ver projeto-->
+            <div class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300 -rotate-45 group-hover:rotate-0 scale-150 group-hover:scale-100 bg-[--hover] rounded-full p-4 border-tertiary outline-secondary" style="box-shadow: 0px 0px 16px var(--hover);">
+              <svg class="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path id="topTextPath" d="M 10,50 A 40,40 0 1,1 90,50" fill="transparent"/>
+                <path id="bottomTextPath" d="M 90,50 A 40,40 0 1,1 10,50" fill="transparent" />
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#topTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#bottomTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+              </svg>
+              <img src="src/assets/images/Seta.svg" alt="" class="w-12 absolute top-10 right-10">
+            </div>
+          </div>
+          <div class="flex flex-col max-xl:items-center gap-2 xl:ml-8">
+            <h3 class="cursor-pointer">Trindade Advocacia</h3>
+            <p class="text-center xl:opacity-0 xl:group-hover:opacity-100 xl:group-focus:opacity-100 transition-all duration-300 cursor-pointer">Site institucional para advogados <span class="opacity-30"> ┃ </span> 2024</p>
+          </div>
+        </a>
+
+      </div>
+      <a href="projetos.html" class="btn">Ver todos</a>
+
+    </section>
+
+    <section data-aos="fade-up" id="about" class="flex flex-col justify-center items-center gap-20 w-full relative">
+
+      <h2>Meu perfil</h2>
+      <div id="about__container" class="flex max-lg:flex-col justify-center items-center gap-10 w-full max-sm:px-5">
+
+        <img src="src/assets/images/Foto.png" alt="Projeto DynDyn" class="max-sm:w-[300px] max-sm:h-[300px] w-[400px] h-[400px] rounded-[30px] border-secondary outline-primary" tabindex="0">
+        <div class="flex flex-col max-lg:items-center max-lg:text-center max-sm:px-10 gap-5 max-w-[450px]">
+          <p>Desenvolvendo com qualidade no código e no design</p>
+          <p>Formado em análise e desenvolvimento de sistemas</p>
+          <p>Interesse em desenvolvimento front-end e web design</p>
+          <p>Buscando uma oportunidade para atuar no mercado de trabalho</p>
+          <a href="perfil.html" class="btn w-max mt-3">Saiba mais</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section data-aos="fade-up" id="techs" class="flex flex-col justify-center items-center gap-20 w-full relative">
+
+      <h2>O que sei</h2>
+      <div id="techs__container" class="flex flex-col justify-center items-center gap-20 w-full px-5">
+        
+        <!--Tecnologias-->
+
+        <div class="flex justify-center items-center flex-col gap-10" tabindex="0">
+          <h3> <span class="text-[--hover] !text-4xl max-sm:!text-3xl !font-normal">#</span> design</h3>
+          <!--Container de Tecnologias-->
+          <div class="flex flex-wrap justify-center items-center gap-5 max-w-[1280px]">
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/Figma.svg" alt="Figma" class="w-16 max-sm:w-11">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">Figma</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="flex justify-center items-center flex-col gap-10" tabindex="0">
+          <h3> <span class="text-[--hover] !text-4xl max-sm:!text-3xl !font-normal">#</span> front-end</h3>
+          <!--Container de Tecnologias-->
+          <div class="flex flex-wrap justify-center items-center gap-5 max-w-[1280px]">
+
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/HTML.svg" alt="HTML" class="w-[50px] max-sm:w-[35px]">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">HTML</span>
+            </div>
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/CSS.svg" alt="CSS" class="w-[50px] max-sm:w-[35px]">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">CSS</span>
+            </div>
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/JS.svg" alt="JavaScript" class="w-16 max-sm:w-12">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">JavaScript</span>
+            </div>
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/Tailwind.svg" alt="TailwindCSS" class="w-16 max-sm:w-12">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">TailwindCSS</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!--
+        <div data-aos="fade-up" class="flex justify-center items-center flex-col gap-10" tabindex="0">
+          <h3> <span class="text-[--hover] !text-4xl max-sm:!text-3xl !font-normal">#</span> back-end</h3>
+          
+          <div class="flex flex-wrap justify-center items-center gap-5 max-w-[1280px]">
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/Java.svg" alt="Java" class="w-[55px] max-sm:w-[40px]">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">Java</span>
+            </div>
+          </div>
+        </div>
+        -->
+
+        <div data-aos="fade-up" class="flex justify-center items-center flex-col gap-10" tabindex="0">
+          <h3> <span class="text-[--hover] !text-4xl max-sm:!text-3xl !font-normal">#</span> banco-de-dados</h3>
+          <!--Container de Tecnologias-->
+          <div class="flex flex-wrap justify-center items-center gap-5 max-w-[1280px]">
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/SQL.svg" alt="Java" class="w-[3.75rem] max-sm:w-[45px]">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="flex justify-center items-center flex-col gap-10" tabindex="0">
+          <h3> <span class="text-[--hover] !text-4xl max-sm:!text-3xl !font-normal">#</span> versionamento</h3>
+          <!--Container de Tecnologias-->
+          <div class="flex flex-wrap justify-center items-center gap-5 max-w-[1280px]">
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/Git.svg" alt="Git" class="w-16 max-sm:w-12">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">Git</span>
+            </div>
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/GitHub.svg" alt="GitHub" class="w-16 max-sm:w-12">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">GitHub</span>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="flex justify-center items-center flex-col gap-10" tabindex="0">
+          <h3> <span class="text-[--hover] !text-4xl max-sm:!text-3xl !font-normal">#</span> no-code</h3>
+          <!--Container de Tecnologias-->
+          <div class="flex flex-wrap justify-center items-center gap-5 max-w-[1280px]">
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/Wordpress.svg" alt="WordPress" class="w-16 max-sm:w-12">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">WordPress</span>
+            </div>
+            <div class="flex justify-center items-center group relative">
+              <div class="card tilt bg-gradient border-secondary outline-primary">
+                <img src="/src/assets/images/Elementor.svg" alt="Elementor" class="w-16 max-sm:w-12 ">
+              </div>
+              <span class="absolute top-32 opacity-0 group-hover:opacity-100 invisible group-hover:visible duration-200 z-40">Elementor</span>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer data-aos="fade-in" class="flex flex-col justify-center items-center w-full xl:w-[1280px] gap-4 px-5 mb-5 pt-60 relative">
+
+    <div id="cta__container" class="flex flex-col justify-center items-center gap-5 text-center bg-gradient2 w-full xl:w-[1280px] border-secondary outline-primary rounded-[40px] py-10">
+
+      <h2>Entre agora em <br> contato comigo!</h2>
+      <a href="contato.html" class="btn w-max mt-3">Contato</a>
+
+    </div>
+
+  </footer>
+
+  <!--
+  ███████  ██████ ██████  ██ ██████  ████████ 
+  ██      ██      ██   ██ ██ ██   ██    ██    
+  ███████ ██      ██████  ██ ██████     ██    
+       ██ ██      ██   ██ ██ ██         ██    
+  ███████  ██████ ██   ██ ██ ██         ██   
+  -->
+
+  <script src="src/js/voltarAoTopo.js"></script>
+  <script src="src/js/menu.js"></script>
+
+  <!--ANIMAÇÕES-->
+  <script src="src/js/seguirCursor.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script> AOS.init({ duration: 1000 }); </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <script>
+    ['tilt'].forEach(className => {
+      VanillaTilt.init(document.querySelectorAll("." + className), {
+      max: 20,
+      speed: 200
+      });
+    });
+  </script>
+  <!--ANIMAÇÕES-->
+
+</body>
+
+</html>

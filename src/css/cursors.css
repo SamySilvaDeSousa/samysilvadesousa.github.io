@@ -1,0 +1,19 @@
+/*
+:root {
+  --cursor-default: url('../assets/images/cursores/Pointer.cur'), auto;
+  --cursor-link: url('../assets/images/cursores/Link.cur'), auto;
+  --cursor-text: url('../assets/images/cursores/Text.cur'), auto;
+}
+
+html, body {
+  cursor: var(--cursor-default) !important;
+}
+
+a, button, input[type="checkbox"], input[type="radio"], input[type="submit"], input[type="button"], input[type="reset"], label, .cursor-pointer, .dot {
+  cursor: var(--cursor-link) !important;
+}
+
+input, textarea {
+  cursor: var(--cursor-text) !important;
+}
+*/

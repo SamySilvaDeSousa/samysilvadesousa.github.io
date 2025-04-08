@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Samy Silva de Sousa">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:image" content="">
+  <title>Portfólio</title>
+  <link rel="icon" href="" type="image/x-icon"> <!--FAVICON-->
+
+  <script src="https://cdn.tailwindcss.com"></script> <!--TAILWIND CDN-->
+  <link rel="stylesheet" href="../src/css/main.css"> <!--CSS-->
+
+  <!--ÍCONES-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!--ÍCONES-->
+
+</head>
+
+<body class="flex flex-col justify-center items-center relative bg-[--bg] overflow-x-hidden">
+
+  <div id="refresh-animation" class="absolute w-full h-full bg-[--highlight] z-50 refresh"></div>
+  <button id="menu__button" class="btn !w-[56px] !h-[56px]"><img id="menu__img" src="src/assets/images/Menu.svg" alt="Abrir o Menu"></button>
+
+  <img src="src/assets/images/Light.png" alt="Light" class="animate-pulse fixed -top-[265px] -translate-x-[1100px] z-[-10]">
+  <img src="src/assets/images/Light.png" alt="Light" class="animate-pulse fixed -top-[265px] translate-x-[1100px] z-[-10]">
+
+  <header class="flex flex-col justify-center items-center w-full relative">
+
+    <nav id="menu">
+      <a href="index.html" class="nav__link hover-effect">Início</a>
+      <a href="servicos.html" class="nav__link hover-effect">Serviços</a>
+      <a href="projetos.html" class="nav__link hover-effect">Projetos</a>
+      <a href="perfil.html" class="nav__link hover-effect">Perfil</a>
+      <a href="contato.html" class="nav__link hover-effect">Contato</a>
+
+      <div class="flex gap-5 mt-10" role="navigation" aria-label="Redes sociais">
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/samysilvadesousa/" aria-label="Abrir meu perfil no LinkedIn">
+          <img src="src/assets/images/LinkedIn-Link_white.svg" alt="Meu LinkedIn" class="w-6 h-6">
+        </a>
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://github.com/SamySilvaDeSousa" aria-label="Abrir meu perfil no GitHub">
+          <img src="src/assets/images/GitHub-Link_white.svg" alt="Meu GitHub" class="w-6 h-6">
+        </a>
+      </div>
+    </nav>
+
+  </header>
+  
+  <main class="flex flex-col justify-center items-center relative w-full h-dvh z-10">
+
+    <section id="contact" class="flex flex-col justify-center items-center gap-20 w-full relative max-sm:px-5">
+
+      <div class="flex flex-col justify-center items-center gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 w-[450px] max-sm:w-full h-full">
+        <img src="src/assets/images/Check.svg" alt="Sucesso" class="w-40 h-40 max-sm:w-28 max-sm:h-28 mt-auto">
+        <div class="flex flex-col justify-center items-center gap-5 w-full">
+          <h2>Sucesso!</h2>
+          <p class="text-center">Sua mensagem foi enviada, aguarde a resposta.</p>
+        </div>
+      </div>
+      <a class="btn" href="index.html">Página inicial</a>
+
+    </section>
+
+  </main>
+
+  <!--
+  ███████  ██████ ██████  ██ ██████  ████████ 
+  ██      ██      ██   ██ ██ ██   ██    ██    
+  ███████ ██      ██████  ██ ██████     ██    
+       ██ ██      ██   ██ ██ ██         ██    
+  ███████  ██████ ██   ██ ██ ██         ██   
+  -->
+
+  <script src="src/js/menu.js"></script>
+
+
+</body>
+
+</html>

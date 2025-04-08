@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Samy Silva de Sousa">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:image" content="">
+  <title>Portfólio</title>
+  <link rel="icon" href="" type="image/x-icon"> <!--FAVICON-->
+
+  <script src="https://cdn.tailwindcss.com"></script> <!--TAILWIND CDN-->
+  <link rel="stylesheet" href="../src/css/main.css"> <!--CSS-->
+
+  <!--ÍCONES-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!--ÍCONES-->
+
+</head>
+
+<body class="flex flex-col justify-center items-center relative bg-[--bg] overflow-x-hidden">
+
+  <div id="refresh-animation" class="absolute w-full h-full bg-[--highlight] z-50 refresh"></div>
+  <button id="menu__button" class="btn !w-[56px] !h-[56px]"><img id="menu__img" src="src/assets/images/Menu.svg" alt="Abrir o Menu"></button>
+
+  <img src="src/assets/images/Light.png" alt="Light" class="animate-pulse fixed -top-[265px] -translate-x-[1100px] z-[-10]">
+  <img src="src/assets/images/Light.png" alt="Light" class="animate-pulse fixed -top-[265px] translate-x-[1100px] z-[-10]">
+
+  <header class="flex flex-col justify-center items-center w-full relative">
+
+    <nav id="menu">
+      <a href="index.html" class="nav__link hover-effect">Início</a>
+      <a href="servicos.html" class="nav__link hover-effect">Serviços</a>
+      <a href="projetos.html" class="nav__link hover-effect">Projetos</a>
+      <a href="perfil.html" class="nav__link hover-effect">Perfil</a>
+      <a href="contato.html" class="nav__link hover-effect">Contato</a>
+
+      <div class="flex gap-5 mt-10" role="navigation" aria-label="Redes sociais">
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/samysilvadesousa/" aria-label="Abrir meu perfil no LinkedIn">
+          <img src="src/assets/images/LinkedIn-Link_white.svg" alt="Meu LinkedIn" class="w-6 h-6">
+        </a>
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://github.com/SamySilvaDeSousa" aria-label="Abrir meu perfil no GitHub">
+          <img src="src/assets/images/GitHub-Link_white.svg" alt="Meu GitHub" class="w-6 h-6">
+        </a>
+      </div>
+    </nav>
+
+  </header>
+  
+  <main class="flex flex-col justify-center items-center gap-[200px] relative w-full z-10">
+
+    <section id="contact" class="flex flex-col justify-center items-center gap-20 w-full relative mt-[200px]">
+
+      <div class="flex flex-col justify-center items-center w-full mb-[120px]">
+        <h1 class="mb-2">Meu contato</h1>
+        <p>Entre em contato comigo!</p>
+      </div>
+
+      <div id="contact__container" class="flex justify-center  max-xl:items-center max-xl:flex-col-reverse gap-10 max-xl:gap-20 w-[1280px] max-xl:w-full max-xl:px-5 pb-5">
+        
+        <div id="contact__left" class="flex justify-center w-max max-sm:w-full">
+
+          <form class="bg-[--bg-blue] rounded-[30px] p-9 border-primary w-[636px]" action="https://api.sheetmonkey.io/form/cgcZDvWafPfK3hW2ZRm4gy" method="post">
+            <!-- Nome -->
+            <label for="nome" class="block ml-5 mb-1 text-white"><h5>Seu nome</h5></label>
+            <input required type="text" name="Nome" id="nome" placeholder="Informe seu nome" class="w-full p-2.5 pl-5 mb-4 rounded-full bg-[--bg] text-white placeholder-[--text-gray] border-primary outline-none focus:border-[--hover]">
+
+            <!-- Email -->
+            <label for="email" class="block ml-5 mb-1 text-white"><h5>Seu email</h5></label>
+            <input required type="email" name="Email" id="email" placeholder="Informe seu email" class="w-full p-2.5 pl-5 mb-4 rounded-full bg-[--bg] text-white placeholder-[--text-gray] border-primary outline-none focus:border-[--hover]">
+
+            <!-- Assunto -->
+            <label for="assunto" class="block ml-5 mb-1 text-white"><h5>Assunto</h5></label>
+            <input required type="assunto" name="Assunto" id="assunto" placeholder="Informe o assunto" class="w-full p-2.5 pl-5 mb-4 rounded-full bg-[--bg] text-white placeholder-[--text-gray] border-primary outline-none focus:border-[--hover]">
+
+            <!-- Mensagem -->
+            <label for="mensagem" class="block ml-5 mb-1 text-white"><h5>Sua mensagem</h5></label>
+            <textarea required name="Mensagem" id="mensagem" rows="8" placeholder="Deixe uma mensagem" class="w-full p-2.5 pl-5 mb-4 rounded-[30px] bg-[--bg] text-white !text-xl placeholder-[--text-gray] border-primary outline-none focus:border-[--hover] resize-none"></textarea>
+
+            <!-- Botão -->
+            <button type="submit" class="btn w-full !font-normal">
+                Enviar
+            </button>
+          </form>
+
+        </div>
+        <div id="contact__right" class="flex flex-col gap-5 max-xl:gap-10 w-[426px] max-xl:items-center">
+
+          <div class="flex max-xl:flex-col items-center gap-3">
+            <div class="w-max !p-3.5 bg-[--highlight] rounded-full">
+              <img src="src/assets/images/Email_contato.svg" alt="Meu linkedin" class="w-7 h-7">
+            </div>
+            <p class="select-text">samysilvadesousa@gmail.com</p>
+          </div>
+          <div class="flex max-xl:flex-col items-center gap-3">
+            <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/samysilvadesousa/" aria-label="Abrir meu perfil no LinkedIn">
+              <img src="src/assets/images/LinkedIn-Link_white.svg" alt="Meu LinkedIn" class="w-6 h-6">
+            </a>
+            <p class="select-text">samysilvadesousa</p>
+          </div>
+          <div class="flex max-xl:flex-col items-center gap-3">
+            <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://github.com/SamySilvaDeSousa" aria-label="Abrir meu perfil no GitHub">
+              <img src="src/assets/images/GitHub-Link_white.svg" alt="Meu GitHub" class="w-6 h-6">
+            </a>
+            <p class="select-text">samysilvadesousa</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!--
+  ███████  ██████ ██████  ██ ██████  ████████ 
+  ██      ██      ██   ██ ██ ██   ██    ██    
+  ███████ ██      ██████  ██ ██████     ██    
+       ██ ██      ██   ██ ██ ██         ██    
+  ███████  ██████ ██   ██ ██ ██         ██   
+  -->
+
+  <script src="src/js/menu.js"></script>
+
+  <!--ANIMAÇÕES-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script> AOS.init({ duration: 1000 }); </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <!--ANIMAÇÕES-->
+
+</body>
+
+</html>

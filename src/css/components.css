@@ -1,0 +1,221 @@
+.border-primary {
+  border: 2px solid var(--highlight);
+}
+.border-secondary {
+  border: 10px solid var(--bg-blue);
+}
+.border-tertiary {
+  border: 10px solid var(--highlight);
+}
+.outline-primary {
+  outline: 2px solid var(--highlight);
+}
+.outline-secondary {
+  outline: 2px solid var(--hover);
+}
+.bg-gradient {
+  background-image: linear-gradient(35deg, var(--highlight) 30%, var(--bg-blue) 60%);
+}
+.bg-gradient2 {
+  background-image: linear-gradient(180deg, var(--highlight), var(--bg-blue) 80%);
+}
+.box-shadow {
+  &:hover {
+    box-shadow: 0px 0px 14px var(--hover);
+  }
+}
+
+.btn {
+  color: var(--text);
+  background-color: var(--highlight);
+  padding: 12px 20px 10px 20px;
+  border-radius: 100px;
+  font-weight: 300 !important;
+
+  &:hover {
+    background-color: var(--hover);
+    box-shadow: 0px 0px 14px var(--hover);
+  }
+}
+[type="submit"] {
+  padding-top: 14px;
+}
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-blue);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 49;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  .nav__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    font-size: 50px !important;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 100px;
+  }
+
+  @media (max-width: 640px) {
+    .nav__link {
+      font-size: 40px !important;
+    }
+  }
+}
+
+.hover-effect {
+  position: relative;
+}
+.hover-effect::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--hover);
+  transform: scaleY(0);
+  transform-origin: center;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  z-index: -1;
+  box-shadow: 0 0 14px var(--hover);
+}
+#menu__button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+
+  & img {
+    width: 24px !important;
+  }
+}
+
+#voltarAoTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s;
+  z-index: 49;
+
+  & img {
+    width: 32px;
+    rotate: -45deg;
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 7rem;
+  min-height: 7rem;
+  border-radius: 40px;
+  transform-style: preserve-3d;
+
+  &:focus {
+    outline: 2px solid white;
+  }
+}
+.tilt, .study, .study--large {
+  transform-style: preserve-3d !important;
+
+  &:hover > img, svg, h1, h2, h3, h4, h5, h6, p {
+    transform: translate3d(0,0,25px) !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .card, .tilt {
+    transform: none !important;
+  }
+}
+@media (max-width: 640px) {
+  .card {
+    min-width: 6.5rem;
+    min-height: 6.5rem;
+  }
+  .carousel-image {
+    border: none !important;
+    outline: none !important;
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background-color: var(--highlight);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: var(--hover);
+  box-shadow: 0px 0px 14px var(--hover);
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0px 0px 14px var(--hover);
+}
+input:invalid:not(:focus):not(:placeholder-shown) {
+  border: 2px solid rgb(182, 0, 0);
+  box-shadow: 0px 0px 14px red;
+}
+
+.mascara-scroll,
+.borrao-direito,
+.borrao-esquerdo {
+  transition: -webkit-mask-image 300ms ease, mask-image 300ms ease;
+}
+
+.mascara-scroll {
+  mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, transparent 100%);
+}
+.borrao-direito {
+  mask-image: linear-gradient(to right, black 0%, black 2%, black 98%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 0%, black 2%, black 98%, transparent 100%);
+}
+.borrao-esquerdo {
+  mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, black 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, black 100%);
+}
+

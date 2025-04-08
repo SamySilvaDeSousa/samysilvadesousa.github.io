@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Samy Silva de Sousa">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta property="og:image" content="">
+  <title>Portfólio</title>
+  <link rel="icon" href="" type="image/x-icon"> <!--FAVICON-->
+
+  <script src="https://cdn.tailwindcss.com"></script> <!--TAILWIND CDN-->
+  <link rel="stylesheet" href="../src/css/main.css"> <!--CSS-->
+
+  <!--ÍCONES-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <!--ÍCONES-->
+
+</head>
+
+<body class="flex flex-col justify-center items-center relative bg-[--bg] overflow-x-hidden">
+
+  <div id="refresh-animation" class="absolute w-full h-full bg-[--highlight] z-50 refresh"></div>
+  <button id="voltarAoTopo" class="btn"><img src="src/assets/images/Seta.svg" alt="Voltar para o Topo"></button>
+  <button id="menu__button" class="btn !w-[56px] !h-[56px]"><img id="menu__img" src="src/assets/images/Menu.svg" alt="Abrir o Menu"></button>
+
+  <img src="src/assets/images/Light.png" alt="Light" class="animate-pulse fixed -top-[265px] -translate-x-[1100px] z-[-10]">
+  <img src="src/assets/images/Light.png" alt="Light" class="animate-pulse fixed -top-[265px] translate-x-[1100px] z-[-10]">
+
+  <header class="flex flex-col justify-center items-center w-full relative">
+
+    <nav id="menu">
+      <a href="index.html" class="nav__link hover-effect">Início</a>
+      <a href="servicos.html" class="nav__link hover-effect">Serviços</a>
+      <a href="projetos.html" class="nav__link hover-effect">Projetos</a>
+      <a href="perfil.html" class="nav__link hover-effect">Perfil</a>
+      <a href="contato.html" class="nav__link hover-effect">Contato</a>
+
+      <div class="flex gap-5 mt-10" role="navigation" aria-label="Redes sociais">
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/samysilvadesousa/" aria-label="Abrir meu perfil no LinkedIn">
+          <img src="src/assets/images/LinkedIn-Link_white.svg" alt="Meu LinkedIn" class="w-6 h-6">
+        </a>
+        <a class="btn !p-4" target="_blank" rel="noopener noreferrer" href="https://github.com/SamySilvaDeSousa" aria-label="Abrir meu perfil no GitHub">
+          <img src="src/assets/images/GitHub-Link_white.svg" alt="Meu GitHub" class="w-6 h-6">
+        </a>
+      </div>
+      
+    </nav>
+
+  </header>
+  
+  <main class="flex flex-col justify-center items-center gap-[200px] relative w-full">
+
+    <section id="title" class="flex flex-col justify-center items-center w-full relative mt-[200px]">
+
+      <div class="flex flex-col justify-center items-center w-full">
+        <h1 class="mb-2">Meus serviços</h1>
+        <p>Veja o que eu faço</p>
+      </div>
+    
+    </section> 
+
+    <section data-aos="fade-up" id="exp" class="flex flex-col justify-center items-center gap-20 w-full px-5 relative">
+
+      <div id="wrapper" class="borrao-esquerdo borrao-direito flex max-sm:gap-5 gap-10 overflow-x-scroll w-[1280px] max-xl:w-full max-xl:snap-x max-lg:snap-mandatory rounded-[40px] p-[2px]">
+        
+        <div tabindex="0" class="snap-center flex flex-col justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 min-h-[400px] min-w-[450px] max-sm:min-w-[330px]">
+          <div class="flex flex-col gap-5 w-full">
+            <h3>Landing Pages</h3>
+            <p>Crio páginas de alta conversão, projetadas para capturar leads e gerar resultados rápidos. Perfeitas para campanhas de marketing, promovendo seus produtos ou serviços de maneira eficaz, maximizando o retorno.</p>
+          </div>
+          <img src="src/assets/images/Funil.svg" alt="" class="w-40 h-40 max-sm:w-28 max-sm:h-28 mt-auto">
+        </div>
+
+        <div tabindex="0" class="snap-center flex flex-col justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 min-h-[400px] min-w-[450px] max-sm:min-w-[330px]">
+          <div class="flex flex-col gap-5 w-full">
+            <h3>Sites Institucionais</h3>
+            <p>Desenvolvo sites completos e profissionais para apresentar sua empresa ao mercado de forma clara e eficiente. Ideal para fortalecer sua marca e conquistar novos clientes.</p>
+          </div>
+          <img src="src/assets/images/Insti.svg" alt="" class="w-40 h-40 max-sm:w-28 max-sm:h-28 mt-auto -mb-2">
+        </div>
+
+        <div tabindex="0" class="snap-center flex flex-col justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 min-h-[400px] min-w-[450px] max-sm:min-w-[330px]">
+          <div class="flex flex-col gap-5 w-full">
+            <h3>Lojas Virtuais</h3>
+            <p>Faço lojas virtuais personalizadas, garantindo uma plataforma de e-commerce robusta, segura e fácil de usar para o seu negócio crescer. Uma ótima escolha se você deseja vender produtos de forma online.</p>
+          </div>
+          <img src="src/assets/images/LojaVirtual.svg" alt="" class="w-40 h-40 max-sm:w-28 max-sm:h-28 mt-auto -mb-1">
+        </div>
+
+        <div tabindex="0" class="snap-center flex flex-col justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 min-h-[400px] min-w-[450px] max-sm:min-w-[330px]">
+          <div class="flex flex-col gap-5 w-full">
+            <h3>Blogs</h3>
+            <p>Crio blogs personalizados para compartilhar conteúdos, atrair audiência e fortalecer sua marca. Ideal para artigos, notícias ou para compartilhar o dia a dia.</p>
+          </div>
+          <img src="src/assets/images/Blog.svg" alt="" class="w-40 h-40 max-sm:w-28 max-sm:h-28 mt-auto -mb-1 -ml-2">
+        </div>
+
+      </div>
+    </section>
+
+    <section data-aos="fade-up" id="vantagens" class="flex flex-col justify-center items-center gap-20 w-full relative">
+
+      <div id="vantagens__container" class="flex flex-col justify-center items-center gap-20 w-full">
+
+        <h2>Conte com essas vantagens</h2>
+        <div class="flex flex-col justify-center items-start gap-10 w-full max-xl:px-5 xl:!w-[1024px]">
+          
+          <div class="flex max-sm:flex-col justify-start items-center gap-10 max-sm:text-center bg-gradient rounded-[40px] border-secondary outline-primary p-10 w-full h-full" tabindex="0">
+            <img src="src/assets/images/Internet.svg" alt="" class="w-36 h-36 max-sm:w-24 max-sm:h-24">
+            <div class="flex flex-col gap-5 w-full">
+              <h3>Domínio Grátis</h3>
+              <p>Coloque sua empresa na Internet rapidamente com 1 ano de domínio gratuito.</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="flex max-sm:flex-col justify-start items-center gap-10 max-sm:text-center bg-gradient rounded-[40px] border-secondary outline-primary p-10 w-full h-full" tabindex="0">
+            <img src="src/assets/images/Email.svg" alt="" class="w-36 h-36 max-sm:w-24 max-sm:h-24">
+            <div class="flex flex-col gap-5 w-full">
+              <h3>E-mail profissional</h3>
+              <p>Comunique-se de forma profissional com seus clientes usando e-mails que usam o seu domínio.</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="flex max-sm:flex-col justify-start items-center gap-10 max-sm:text-center bg-gradient rounded-[40px] border-secondary outline-primary p-10 w-full h-full" tabindex="0">
+            <img src="src/assets/images/Server.svg" alt="" class="w-36 h-36 max-sm:w-24 max-sm:h-24">
+            <div class="flex flex-col gap-5 w-full">
+              <h3>Hospedagem ideal</h3>
+              <p>Escolho a hospedagem perfeita para o seu site, equilibrando custo e desempenho.</p>
+            </div>
+          </div>
+          <div data-aos="fade-up" class="flex max-sm:flex-col justify-start items-center gap-10 max-sm:text-center bg-gradient rounded-[40px] border-secondary outline-primary p-10 w-full h-full" tabindex="0">
+            <img src="src/assets/images/Wrench.svg" alt="" class="w-36 h-36 max-sm:w-24 max-sm:h-24">
+            <div class="flex flex-col gap-5 w-full">
+              <h3>Manutenção e suporte</h3>
+              <p>Receba gratuitamente 1 mês de suporte e manutenção para a gestão do seu site após a entrega dele.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section data-aos="fade-up" id="vantagens" class="flex flex-col justify-center items-center gap-20 w-full relative">
+
+      <div id="vantagens__container" class="flex flex-col justify-center items-center gap-20 w-full">
+
+        <h2>Veja o processo de criação</h2>
+        <div class="flex flex-col justify-center items-start gap-20 max-sm:gap-10 w-full max-lg:px-5 lg:!w-[1024px]">
+          
+          <div class="flex flex-wrap justify-around items-center w-full">
+            <span class="span-number !text-[250px] max-sm:!text-[150px] !font-black">01</span>
+            <div class="flex flex-col max-sm:flex-col-reverse justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 max-sm:w-full w-[450px] h-full" tabindex="0">
+              <div class="flex flex-col gap-5 w-full max-sm:text-center">
+                <h3>Briefing do seu site</h3>
+                <p>Entendemos suas necessidades e objetivos para criar um site que reflita sua marca e atenda seus clientes efetivamente. Reunimos todas as informações essenciais para guiar o processo de desenvolvimento.</p>
+              </div>
+              <img src="src/assets/images/Chat.svg" alt="" class="w-40 h-40 max-sm:w-36 max-sm:h-36 -mt-5 -mb-6 -ml-2 max-sm:self-center">
+            </div>
+          </div>
+          <div data-aos="fade-up" class="flex flex-wrap flex-row-reverse justify-around items-center w-full">
+            <span class="span-number !text-[250px] max-sm:!text-[150px] !font-black">02</span>
+            <div class="flex flex-col max-sm:flex-col-reverse justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 max-sm:w-full w-[450px] h-full" tabindex="0">
+              <div class="flex flex-col gap-5 w-full max-sm:text-center">
+                <h3>Protótipo do seu site</h3>
+                <p>Criamos um layout visual simples que serve como a base para validar a estrutura do site antes de iniciarmos o desenvolvimento final.</p>
+              </div>
+              <img src="src/assets/images/Prototipo.svg" alt="" class="w-32 h-32 max-sm:w-28 max-sm:h-28 max-sm:self-center">
+            </div>
+          </div>
+          <div data-aos="fade-up" class="flex flex-wrap justify-around items-center w-full">
+            <span class="span-number !text-[250px] max-sm:!text-[150px] !font-black">03</span>
+            <div class="flex flex-col max-sm:flex-col-reverse justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 max-sm:w-full w-[450px] h-full" tabindex="0">
+              <div class="flex flex-col gap-5 w-full max-sm:text-center">
+                <h3>Aprovação do protótipo</h3>
+                <p>Apresentamos o protótipo para sua avaliação e aprovação. Se necessário, ajustamos o que for preciso até que o design fique perfeito antes da finalização.</p>
+              </div>
+              <img src="src/assets/images/Check.svg" alt="" class="w-32 h-32 max-sm:w-28 max-sm:h-28 -mt-4 -mb-3 max-sm:self-center">
+            </div>
+          </div>
+          <div data-aos="fade-up" class="flex flex-wrap flex-row-reverse justify-around items-center w-full">
+            <span class="span-number !text-[250px] max-sm:!text-[150px] !font-black">04</span>
+            <div class="flex flex-col max-sm:flex-col-reverse justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 max-sm:w-full w-[450px] h-full" tabindex="0">
+              <div class="flex flex-col gap-5 w-full max-sm:text-center">
+                <h3>Hospedagem do seu domínio</h3>
+                <p>Registramos e hospedamos seu domínio, garantindo segurança e performance. Escolhemos a solução mais apropriada para o seu site.</p>
+              </div>
+              <img src="src/assets/images/Server.svg" alt="" class="w-32 h-32 max-sm:w-28 max-sm:h-28 -mb-2 max-sm:self-center">
+            </div>
+          </div>
+          <div data-aos="fade-up" class="flex flex-wrap justify-around items-center w-full">
+            <span class="span-number !text-[250px] max-sm:!text-[150px] !font-black">05</span>
+            <div class="flex flex-col max-sm:flex-col-reverse justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 max-sm:w-full w-[450px] h-full" tabindex="0">
+              <div class="flex flex-col gap-5 w-full max-sm:text-center">
+                <h3>Criação do seu site</h3>
+                <p>Desenvolvemos o site e cuidamos para que ele seja responsivo, otimizado, com design profissional e alta performance, além do uso de WordPress.</p>
+              </div>
+              <img src="src/assets/images/Pincel.svg" alt="" class="w-32 h-32 max-sm:w-28 max-sm:h-28 -mb-3 max-sm:self-center">
+            </div>
+          </div>
+          <div data-aos="fade-up" class="flex flex-wrap flex-row-reverse justify-around items-center w-full">
+            <span class="span-number !text-[250px] max-sm:!text-[150px] !font-black">06</span>
+            <div class="flex flex-col max-sm:flex-col-reverse justify-start items-start gap-10 bg-gradient rounded-[40px] border-secondary outline-primary p-10 max-sm:w-full w-[450px] h-full" tabindex="0">
+              <div class="flex flex-col gap-5 w-full max-sm:text-center">
+                <h3>Manutenção e suporte do seu site</h3>
+                <p>Oferecemos um pacote completo de manutenção para sites WordPress, com suporte, correções, atualizações e proteção contínua.</p>
+              </div>
+              <img src="src/assets/images/Wrench.svg" alt="" class="w-32 h-32 max-sm:w-28 max-sm:h-28 max-sm:self-center">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section data-aos="fade-up" id="studies" class="flex flex-col justify-center items-center gap-20 w-full relative">
+
+      <div id="studies__container" class="flex flex-col justify-center items-center gap-20 w-full">
+
+        <h2 class="mx-5">Potencialize seu negócio!</h2>
+        <div class="flex max-xl:flex-wrap justify-center items-start gap-10 w-full max-xl:px-5 lg:!w-[1280px]">
+
+          <div class="tilt flex flex-col justify-evenly items-center gap-10 text-center bg-gradient2 rounded-[40px] border-secondary outline-primary p-10 max-sm:w-full w-[400px] h-[400px] max-sm:h-[350px]" tabindex="0">
+            <img src="src/assets/images/Visibilidade.svg" alt="" class="w-32 h-32 max-sm:w-28 max-sm:h-28">
+            <h4>Aumente a sua visibilidade na internet</h4>
+          </div>
+          <div class="tilt flex flex-col justify-evenly items-center gap-10 text-center bg-gradient2 rounded-[40px] border-secondary outline-primary p-10 max-sm:w-full w-[400px] h-[400px] max-sm:h-[350px]" tabindex="0">
+            <img src="src/assets/images/Clientes.svg" alt="" class="w-36 h-36 max-sm:w-28 max-sm:h-28 -mb-3">
+            <h4>Atraia ainda mais clientes até você</h4>
+          </div>
+          <div class="tilt flex flex-col justify-evenly items-center gap-10 text-center bg-gradient2 rounded-[40px] border-secondary outline-primary p-10 max-sm:w-full w-[400px] h-[400px] max-sm:h-[350px]" tabindex="0">
+            <img src="src/assets/images/Vendas.svg" alt="" class="w-32 h-32 max-sm:w-28 max-sm:h-28">
+            <h4>Converta visitas em vendas</h4>
+          </div>
+          <div class="tilt flex flex-col justify-evenly items-center gap-10 text-center bg-gradient2 rounded-[40px] border-secondary outline-primary p-10 max-sm:w-full w-[400px] h-[400px] max-sm:h-[350px]" tabindex="0">
+            <img src="src/assets/images/Resultados.svg" alt="" class="w-32 h-32 max-sm:w-28 max-sm:h-28">
+            <h4>Multiplique <br> os seus resultados</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section data-aos="fade-up" id="projects" class="flex flex-col justify-center items-center gap-20 w-full relative">
+
+      <h2>Meus projetos</h2>
+      <div id="projects__container" class="grid grid-cols-2 max-xl:grid-cols-1 flex-wrap justify-between items-center !gap-y-20 xl:gap-10 max-w-[1280px] max-md:px-5">
+        
+        <!--Projetos-->
+        <a href="projetos/dyndyn.html" class="flex flex-col items-start max-xl:items-center gap-5 cursor-pointer group w-full max-xl:w-[600px] max-md:w-full rounded-[40px]">
+          <div class="flex flex-col justify-center items-center bg-[--bg-blue] group-hover:bg-[--highlight] delay-75 rounded-[40px] border-secondary outline-primary overflow-hidden relative">
+            <img src="src/assets/images/DynDyn.png" alt="Projeto DynDyn" class="w-full h-full rounded-[30px] cursor-pointer group-hover:scale-[1.1] group-hover:blur-sm group-hover:opacity-60 transition-all duration-300">
+            <!--Ver projeto-->
+            <div class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300 -rotate-45 group-hover:rotate-0 scale-150 group-hover:scale-100 bg-[--hover] rounded-full p-4 border-tertiary outline-secondary" style="box-shadow: 0px 0px 16px var(--hover);">
+              <svg class="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path id="topTextPath" d="M 10,50 A 40,40 0 1,1 90,50" fill="transparent"/>
+                <path id="bottomTextPath" d="M 90,50 A 40,40 0 1,1 10,50" fill="transparent" />
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#topTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#bottomTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+              </svg>
+              <img src="src/assets/images/Seta.svg" alt="" class="w-12 absolute top-10 right-10">
+            </div>
+          </div>
+          <div class="flex flex-col max-xl:items-center gap-2 xl:ml-8">
+            <h3 class="cursor-pointer">DynDyn</h3>
+            <p class="text-center xl:opacity-0 xl:group-hover:opacity-100 xl:group-focus:opacity-100 transition-all duration-300 cursor-pointer">Sistema de gestão financeira <span class="opacity-30"> ┃ </span> 2024</p>
+          </div>
+        </a>
+        
+        <a href="projetos/trindade-advocacia.html" class="flex flex-col items-start max-xl:items-center gap-5 cursor-pointer group w-full max-xl:w-[600px] max-md:w-full rounded-[40px]">
+          <div class="flex flex-col justify-center items-center bg-[--bg-blue] group-hover:bg-[--highlight] delay-75 rounded-[40px] border-secondary outline-primary overflow-hidden relative">
+            <img src="src/assets/images/Trindade_Advocacia.png" alt="Projeto Trindade Advocacia" class="w-full h-full rounded-[30px] cursor-pointer group-hover:scale-[1.1] group-hover:blur-sm group-hover:opacity-60 transition-all duration-300">
+            <!--Ver projeto-->
+            <div class="absolute opacity-0 group-hover:opacity-100 transition-all duration-300 -rotate-45 group-hover:rotate-0 scale-150 group-hover:scale-100 bg-[--hover] rounded-full p-4 border-tertiary outline-secondary" style="box-shadow: 0px 0px 16px var(--hover);">
+              <svg class="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path id="topTextPath" d="M 10,50 A 40,40 0 1,1 90,50" fill="transparent"/>
+                <path id="bottomTextPath" d="M 90,50 A 40,40 0 1,1 10,50" fill="transparent" />
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#topTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+                <text class="text-sm font-black fill-white">
+                  <textPath href="#bottomTextPath" startOffset="50%" text-anchor="middle">
+                    VER PROJETO
+                  </textPath>
+                </text>
+              </svg>
+              <img src="src/assets/images/Seta.svg" alt="" class="w-12 absolute top-10 right-10">
+            </div>
+          </div>
+          <div class="flex flex-col max-xl:items-center gap-2 xl:ml-8">
+            <h3 class="cursor-pointer">Trindade Advocacia</h3>
+            <p class="text-center xl:opacity-0 xl:group-hover:opacity-100 xl:group-focus:opacity-100 transition-all duration-300 cursor-pointer">Site institucional para advogados <span class="opacity-30"> ┃ </span> 2024</p>
+          </div>
+        </a>
+
+      </div>
+      <a href="projetos.html" class="btn">Ver todos</a>
+
+    </section>
+
+  </main>
+
+  <footer data-aos="fade-in" class="flex flex-col justify-center items-center w-full xl:w-[1280px] gap-4 px-5 mb-5 pt-60 relative">
+
+    <div id="cta__container" class="flex flex-col justify-center items-center gap-5 text-center bg-gradient2 w-full xl:w-[1280px] border-secondary outline-primary rounded-[40px] py-10">
+
+      <h2>Entre agora em <br> contato comigo!</h2>
+      <a href="contato.html" class="btn w-max mt-3">Contato</a>
+
+    </div>
+
+  </footer>
+
+    <!--
+  ███████  ██████ ██████  ██ ██████  ████████ 
+  ██      ██      ██   ██ ██ ██   ██    ██    
+  ███████ ██      ██████  ██ ██████     ██    
+       ██ ██      ██   ██ ██ ██         ██    
+  ███████  ██████ ██   ██ ██ ██         ██   
+  -->
+
+  <script src="src/js/voltarAoTopo.js"></script>
+  <script src="src/js/menu.js"></script>
+  <script src="src/js/scroll.js"></script>
+
+  <!--ANIMAÇÕES-->
+  <script src="src/js/seguirCursor.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  <script> AOS.init({ duration: 1000 }); </script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <script>
+    ['tilt'].forEach(className => {
+      VanillaTilt.init(document.querySelectorAll("." + className), {
+      max: 20,
+      speed: 2000
+      });
+    });
+  </script>
+  <!--ANIMAÇÕES-->
+
+</body>
+
+</html>
