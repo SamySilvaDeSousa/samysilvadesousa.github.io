@@ -48,7 +48,7 @@
   align-items: center;
   position: fixed;
   top: 0;
-  width: 100dvh;
+  width: 100dvw;
   height: 100dvh;
   background-color: var(--bg-blue);
   overflow: hidden;
