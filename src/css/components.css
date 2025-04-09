@@ -218,4 +218,3 @@ input:invalid:not(:focus):not(:placeholder-shown) {
   mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, black 100%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 2%, black 98%, black 100%);
 }
-

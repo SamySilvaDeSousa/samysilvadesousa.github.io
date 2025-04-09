@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 
-  // Voltar ao topo suavemente ao clicar
   button.addEventListener("click", function () {
       window.scrollTo({
           top: 0,

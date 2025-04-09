@@ -8,7 +8,6 @@ function criarCarrossel({ seletorContainer, seletorImagem, pastaImagens, nomesIm
   const botoesProximo = container.querySelectorAll('.next-button');
   const pontos = container.querySelectorAll('.dot');
 
-  // Detecta profundidade da URL para ajustar o caminho das imagens
   const profundidade = window.location.pathname.split('/').length - 1;
   const prefixo = profundidade > 1 ? '../'.repeat(profundidade - 1) : '';
   const imagens = nomesImagens.map(nome => `${prefixo}${pastaImagens}/${nome}`);

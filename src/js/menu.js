@@ -2,12 +2,24 @@ const button = document.querySelector('#menu__button');
 const menu = document.querySelector('#menu');
 const img = document.querySelector('#menu__img');
 
-// Função para detectar caminho relativo correto
 function getImagePath(fileName) {
-  // Verifica se a URL atual tem subpastas
   const depth = window.location.pathname.split('/').length - 1;
-  const prefix = depth > 1 ? '../' : ''; // usa '../' se estiver em subpasta
+  const prefix = depth > 1 ? '../' : ''; 
   return `${prefix}src/assets/images/${fileName}`;
+}
+
+function desativarScroll() {
+  window.addEventListener('wheel', preventScroll, { passive: false });
+  window.addEventListener('touchmove', preventScroll, { passive: false });
+}
+
+function ativarScroll() {
+  window.removeEventListener('wheel', preventScroll, { passive: false });
+  window.removeEventListener('touchmove', preventScroll, { passive: false });
+}
+
+function preventScroll(e) {
+  e.preventDefault();
 }
 
 button.addEventListener('click', function () {
@@ -21,7 +33,10 @@ button.addEventListener('click', function () {
     img.alt = 'Fechar o Menu';
     img.style.width = '20px';
     img.style.height = '20px';
-  } else {
+
+    desativarScroll();
+  } 
+  else {
     menu.style.opacity = "0";
     setTimeout(() => {
       menu.style.visibility = "hidden";
@@ -31,5 +46,7 @@ button.addEventListener('click', function () {
     img.alt = 'Abrir o Menu';
     img.style.width = '56px';
     img.style.height = '56px';
+
+    ativarScroll();
   }
 });
