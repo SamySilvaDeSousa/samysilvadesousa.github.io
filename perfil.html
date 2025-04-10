@@ -307,6 +307,24 @@
   </script>
   <!--ANIMAÇÕES-->
 
+  <!--SCROLL SUAVE-->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+  <script defer src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const lenis = new Lenis();
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    });
+  </script>
+  <!--SCROLL SUAVE-->
+
 </body>
 
 </html>
