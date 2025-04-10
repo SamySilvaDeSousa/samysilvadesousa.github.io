@@ -8,20 +8,6 @@ function getImagePath(fileName) {
   return `${prefix}src/assets/images/${fileName}`;
 }
 
-function desativarScroll() {
-  window.addEventListener('wheel', preventScroll, { passive: false });
-  window.addEventListener('touchmove', preventScroll, { passive: false });
-}
-
-function ativarScroll() {
-  window.removeEventListener('wheel', preventScroll, { passive: false });
-  window.removeEventListener('touchmove', preventScroll, { passive: false });
-}
-
-function preventScroll(e) {
-  e.preventDefault();
-}
-
 button.addEventListener('click', function () {
   const isHidden = menu.style.opacity === "0" || menu.style.opacity === "";
 
@@ -33,8 +19,6 @@ button.addEventListener('click', function () {
     img.alt = 'Fechar o Menu';
     img.style.width = '20px';
     img.style.height = '20px';
-
-    desativarScroll();
   } 
   else {
     menu.style.opacity = "0";
@@ -46,7 +30,5 @@ button.addEventListener('click', function () {
     img.alt = 'Abrir o Menu';
     img.style.width = '56px';
     img.style.height = '56px';
-
-    ativarScroll();
   }
 });
