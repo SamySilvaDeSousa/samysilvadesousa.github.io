@@ -30,6 +30,7 @@ button {
 h1 {
   font-size: 56px !important;
   font-weight: 600 !important;
+  line-height: 70px;
   width: 70%;
   text-align: center;
 }
@@ -37,22 +38,27 @@ h2 {
   font-size: 48px !important;
   font-weight: 500 !important;
   text-align: center;
+  line-height: 60px;
 }
 h3 {
   font-size: 32px !important;
   font-weight: 400 !important;
+  line-height: 40px;
 }
 h4 {
   font-size: 26px !important;
   font-weight: 400 !important;
+  line-height: 35px;
 }
 h5 {
   font-size: 24px !important;
   font-weight: 300 !important;
+  line-height: 30px;
 }
 h6 {
   font-size: 22px !important;
   font-weight: 300 !important;
+  line-height: 30px;
 }
 p, span, a, li, ul, button, label, input, textarea, ::placeholder, .nav__link, .nav__link--active {
   font-size: 20px !important;
@@ -63,29 +69,35 @@ p, span, a, li, ul, button, label, input, textarea, ::placeholder, .nav__link, .
   h1 {
     font-size: 44px !important;
     font-weight: 600 !important;
+    line-height: 50px;
     width: 70%;
     text-align: center;
   }
   h2 {
     font-size: 36px !important;
     font-weight: 500 !important;
+    line-height: 70px;
     text-align: center;
   }
   h3 {
     font-size: 28px !important;
     font-weight: 400 !important;
+    line-height: 70px;
   }
   h4 {
     font-size: 24px !important;
     font-weight: 400 !important;
+    line-height: 70px;
   }
   h5 {
     font-size: 22px !important;
     font-weight: 300 !important;
+    line-height: 70px;
   }
   h6 {
     font-size: 20px !important;
     font-weight: 300 !important;
+    line-height: 70px;
   }
   p, span, a, button, label, input, textarea, ::placeholder, .nav__link, .nav__link--active {
     font-size: 18px !important;
